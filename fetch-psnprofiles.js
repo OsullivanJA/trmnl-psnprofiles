@@ -1,8 +1,21 @@
-import fetch from "node-fetch";
+import { chromium } from "playwright";
 import * as cheerio from "cheerio";
 import fs from "fs";
 
 const URL = "https://psnprofiles.com/OSullivanJA";
+
+async function getHtmlWithBrowser() {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({
+    userAgent:
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36"
+  });
+
+  await page.goto(URL, { waitUntil: "domcontentloaded" });
+  const html = await page.content();
+  await browser.close();
+  return html;
+}
 
 function textNumber($, selector) {
   const t = $(selector).first().text().replace(/\s+/g, " ").trim();
@@ -27,32 +40,7 @@ function statValue($, el) {
 }
 
 async function run() {
-  const res = await fetch(URL, {
-  redirect: "follow",
-  headers: {
-    "User-Agent":
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-    "Accept":
-      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-IE,en;q=0.9,en-GB;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Cache-Control": "no-cache",
-    "Pragma": "no-cache",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1"
-  }
-});
-
-
-  if (!res.ok) {
-    throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
-  }
-
-  const html = await res.text();
+  const html = await getHtmlWithBrowser();
   const $ = cheerio.load(html);
 
   // Username + Level
