@@ -1,0 +1,13 @@
+{
+  "name": "trmnl-psnprofiles",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Daily PSNProfiles fetch for TRMNL",
+  "scripts": {
+    "fetch": "node fetch-psnprofiles.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.2"
+  }
+}
