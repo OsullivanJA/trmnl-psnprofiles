@@ -179,5 +179,27 @@ async function run() {
 
 run().catch((e) => {
   console.error("❌ Error:", e.message);
-  process.exit(1);
+
+  // Write a minimal JSON so the workflow continues and uploads artifacts
+  fs.writeFileSync(
+    "psnprofiles.json",
+    JSON.stringify(
+      {
+        source: URL,
+        updated: new Date().toISOString(),
+        error: e.message,
+        username: "",
+        level: 0,
+        trophies: { total: null, platinum: null, gold: null, silver: null, bronze: null },
+        stats: {},
+        recent: []
+      },
+      null,
+      2
+    )
+  );
+
+  // Do NOT fail the job; we want artifacts
+  process.exit(0);
 });
+
