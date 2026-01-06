@@ -3,7 +3,33 @@ import * as cheerio from "cheerio";
 import fs from "fs";
 
 const URL = "https://psnprofiles.com/OSullivanJA";
+async function getPageContent() {
+  const browser = await chromium.launch({ headless: true });
 
+  const context = await browser.newContext({
+    userAgent:
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    locale: "en-GB",
+    viewport: { width: 1280, height: 720 }
+  });
+
+  const page = await context.newPage();
+
+  // Go to the page and wait for network to settle
+  await page.goto(URL, { waitUntil: "networkidle", timeout: 60000 });
+
+  // Give it a moment in case there are dynamic elements / interstitials
+  await page.waitForTimeout(2000);
+
+  const html = await page.content();
+
+  // Always write debug files (small, safe, and helpful)
+  fs.writeFileSync("debug.html", html);
+  await page.screenshot({ path: "debug.png", fullPage: true });
+
+  await browser.close();
+  return html;
+}
 async function getHtmlWithBrowser() {
   const browser = await chromium.launch();
   const page = await browser.newPage({
@@ -40,9 +66,13 @@ function statValue($, el) {
 }
 
 async function run() {
-  const html = await getHtmlWithBrowser();
+  const html = await getPageContent();
   const $ = cheerio.load(html);
-
+  const hasUserBar = $("#user-bar").length > 0;
+  if (!hasUserBar) {
+    console.error("❌ Could not find #user-bar. Likely bot protection / interstitial page.");
+    // We still write psnprofiles.json, but it will be empty
+  }
   // Username + Level
   const username = cleanText($("#user-bar .username").first());
   const level = Number(cleanText($("#user-bar .level-box span").first()));
