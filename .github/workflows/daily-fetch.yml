@@ -30,6 +30,17 @@ jobs:
 
       - name: Run fetch script
         run: npm run fetch
+        
+      - name: Upload debug artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: psnprofiles-debug
+          path: |
+            debug.html
+            debug.png
+            psnprofiles.json
+
 
       - name: Commit and push if changed
         run: |
