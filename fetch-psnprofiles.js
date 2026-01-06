@@ -14,19 +14,30 @@ async function getPageContent() {
   });
 
   const page = await context.newPage();
+  await page.route("**/*", (route) => {
+  const type = route.request().resourceType();
+  if (type === "image" || type === "font" || type === "media") {
+      return route.abort();
+    }
+    return route.continue();
+  });
 
+try {
   // Go to the page and wait for network to settle
-  await page.goto(URL, { waitUntil: "networkidle", timeout: 60000 });
-
-  // Give it a moment in case there are dynamic elements / interstitials
-  await page.waitForTimeout(2000);
+  await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 60000 });
+  await page.waitForTimeout(5000);
+  } catch (err) {
+    // Still try to capture whatever loaded
+    console.error("⚠️ Navigation warning:", err.message);
+  }
 
   const html = await page.content();
 
   // Always write debug files (small, safe, and helpful)
   fs.writeFileSync("debug.html", html);
+  try {
   await page.screenshot({ path: "debug.png", fullPage: true });
-
+  } catch {}
   await browser.close();
   return html;
 }
