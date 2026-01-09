@@ -1,8 +1,9 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-01-08T14:34:06.187Z",
+  "updated": "2026-01-09T10:08:10.271Z",
   "username": "OSullivanJA",
   "level": 296,
+  "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
     "total": 2163,
     "platinum": 26,
@@ -16,65 +17,62 @@
     "Completion": "56.61%",
     "Unearned Trophies": "1,585",
     "Trophies Per Day": "0.52",
-    "Views": "216",
-    "World Rank": "523,987",
-    "Country Rank": "3,927"
+    "Views": "217",
+    "World Rank": "524,186",
+    "Country Rank": "3,931"
   },
-  "recent": [
+  "recent_trophies": [
     {
       "trophyName": "Foodie",
-      "description": "2 days ago in Metal Gear Solid Δ: Snake Eater",
-      "earned": "2 days ago",
       "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityPercent": "59.70%",
-      "rarityLabel": "Common",
-      "trophyType": "bronze",
-      "trophyUrl": "https://psnprofiles.com/trophy/36071-metal-gear-solid-δ-snake-eater/21-foodie",
-      "image": "https://img.psnprofiles.com/trophy/s/36071/c91c2a5e-38f1-4ea1-a380-37ede7a61e67.png"
+      "rarityLabel": "Common"
     },
     {
       "trophyName": "Cinephile",
-      "description": "3 days ago in Metal Gear Solid Δ: Snake Eater",
-      "earned": "3 days ago",
       "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityPercent": "86.50%",
-      "rarityLabel": "Common",
-      "trophyType": "bronze",
-      "trophyUrl": "https://psnprofiles.com/trophy/36071-metal-gear-solid-δ-snake-eater/26-cinephile",
-      "image": "https://img.psnprofiles.com/trophy/s/36071/d4b9a3e9-b37a-4924-abbc-821a627e845f.png"
+      "rarityLabel": "Common"
     },
     {
       "trophyName": "Don't Touch the Sides",
-      "description": "3 days ago in Metal Gear Solid Δ: Snake Eater",
-      "earned": "3 days ago",
       "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityPercent": "73.78%",
-      "rarityLabel": "Common",
-      "trophyType": "bronze",
-      "trophyUrl": "https://psnprofiles.com/trophy/36071-metal-gear-solid-δ-snake-eater/14-dont-touch-the-sides",
-      "image": "https://img.psnprofiles.com/trophy/s/36071/1e94c370-5572-4f6a-a0b6-6ab5c7108444.png"
+      "rarityLabel": "Common"
     },
     {
       "trophyName": "Promise Kept",
-      "description": "4 weeks ago in Resident Evil 7: Biohazard",
-      "earned": "4 weeks ago",
       "game": "Resident Evil 7: Biohazard",
-      "rarityPercent": "35.55%",
-      "rarityLabel": "Uncommon",
-      "trophyType": "bronze",
-      "trophyUrl": "https://psnprofiles.com/trophy/16680-resident-evil-7-biohazard/52-promise-kept",
-      "image": "https://img.psnprofiles.com/trophy/s/16680/4f733cf3-6b56-48e9-99bd-5cfb68a16285.png"
+      "rarityLabel": "Uncommon"
     },
     {
       "trophyName": "Queensberry Rules",
-      "description": "4 weeks ago in Resident Evil 7: Biohazard",
-      "earned": "4 weeks ago",
       "game": "Resident Evil 7: Biohazard",
-      "rarityPercent": "39.22%",
-      "rarityLabel": "Uncommon",
-      "trophyType": "bronze",
-      "trophyUrl": "https://psnprofiles.com/trophy/16680-resident-evil-7-biohazard/56-queensberry-rules",
-      "image": "https://img.psnprofiles.com/trophy/s/16680/032a5e41-3c0b-4ece-af0a-291bb44e8c15.png"
+      "rarityLabel": "Uncommon"
+    }
+  ],
+  "recent_games": [
+    {
+      "title": "Metal Gear Solid Δ: Snake Eater",
+      "trophies_earned": 13,
+      "trophies_total": 46
+    },
+    {
+      "title": "Resident Evil 7: Biohazard",
+      "trophies_earned": 36,
+      "trophies_total": 59
+    },
+    {
+      "title": "Resident Evil Village",
+      "trophies_earned": 0,
+      "trophies_total": 57
+    },
+    {
+      "title": "Death Stranding 2: On the Beach",
+      "trophies_earned": 55,
+      "trophies_total": 55
+    },
+    {
+      "title": "NieR: Automata",
+      "trophies_earned": 28,
+      "trophies_total": 48
     }
   ]
 }
