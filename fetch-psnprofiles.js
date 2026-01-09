@@ -1,6 +1,6 @@
-import { chromium } from "playwright";
 import * as cheerio from "cheerio";
 import fs from "fs";
+import { execSync } from "child_process";
 
 const URL = "https://psnprofiles.com/OSullivanJA";
 const OUT_FILE = "psnprofiles.json";
@@ -16,8 +16,8 @@ function textNumber($, selector) {
 }
 
 function statValue($, el) {
-  // Gets the value part excluding nested <span>Label</span>
-  return $(el)
+  return cheerio.load(el)
+    .root()
     .clone()
     .children()
     .remove()
@@ -26,59 +26,19 @@ function statValue($, el) {
     .trim();
 }
 
-async function getPageContent() {
-  const browser = await chromium.launch({ headless: true });
-
-  const context = await browser.newContext({
-    userAgent:
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-    locale: "en-GB",
-    viewport: { width: 1280, height: 720 }
-  });
-
-  const page = await context.newPage();
-
-  // Speed up: block images/fonts/media (we still parse image URLs from HTML)
-  await page.route("**/*", (route) => {
-    const type = route.request().resourceType();
-    if (type === "image" || type === "font" || type === "media") return route.abort();
-    return route.continue();
-  });
-
-  try {
-    await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await page.waitForTimeout(5000);
-  } catch (err) {
-    console.error("⚠️ Navigation warning:", err.message);
-  }
-
-  const html = await page.content();
-
-  // Save debug output (helpful for troubleshooting)
-  fs.writeFileSync("debug.html", html);
-  try {
-    await page.screenshot({ path: "debug.png", fullPage: true });
-  } catch {}
-
-  await browser.close();
-  return html;
+function fetchHtmlWithCurl() {
+  // Use a realistic user agent to avoid basic blocks
+  const cmd = `curl -L -s -A "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Mobile Safari/537.36" "${URL}"`;
+  return execSync(cmd, { encoding: "utf8", maxBuffer: 10 * 1024 * 1024 });
 }
 
 function extractProfileImage($) {
-  // PSNProfiles avatar is usually in an <img> element inside #user-bar
-  // We try a few common selectors to be resilient.
-  const candidates = [
-    "#user-bar img.avatar",
-    "#user-bar img",
-    ".profile img",
-    "img.avatar",
-  ];
-
+  // Tries common selectors for avatar
+  const candidates = ["#user-bar img.avatar", "#user-bar img", "img.avatar"];
   for (const sel of candidates) {
     const src = $(sel).first().attr("src");
     if (src && src.startsWith("http")) return src;
   }
-
   return "";
 }
 
@@ -87,26 +47,12 @@ function extractStats($) {
 
   $(".stats span.stat").each((_, el) => {
     const label = cleanText($(el).find("span").last());
-    const value = statValue($, el);
+    const value = $(el).clone().children().remove().end().text().trim();
     if (label) stats[label] = value;
   });
 
-  // World/Country ranks appear as links with nested <span>
-  const worldRank = $(".stats .rank a")
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim();
-
-  const countryRank = $(".stats .country-rank a")
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim();
+  const worldRank = $(".stats .rank a").clone().children().remove().end().text().trim();
+  const countryRank = $(".stats .country-rank a").clone().children().remove().end().text().trim();
 
   if (worldRank) stats["World Rank"] = worldRank;
   if (countryRank) stats["Country Rank"] = countryRank;
@@ -121,18 +67,11 @@ function extractRecentTrophies($) {
     if (i >= 5) return false;
 
     const trophyName = cleanText($(li).find("a.title").first());
-
-    // e.g. "9 hours ago in Metal Gear Solid Δ: Snake Eater"
     const earnedLine = cleanText($(li).find(".small_info_green"));
     const game = earnedLine.split(" in ").slice(1).join(" in ").trim();
-
     const rarityLabel = cleanText($(li).find(".typo-bottom nobr").first());
 
-    recent_trophies.push({
-      trophyName,
-      game,
-      rarityLabel
-    });
+    recent_trophies.push({ trophyName, game, rarityLabel });
   });
 
   return recent_trophies;
@@ -145,8 +84,6 @@ function extractRecentGames($) {
     if (i >= 5) return false;
 
     const title = cleanText($(tr).find("a.title").first());
-
-    // "12 of 46 Trophies" or "All 55 Trophies"
     const trophyInfo = cleanText($(tr).find("div.small-info").first());
 
     let trophies_earned = null;
@@ -164,11 +101,7 @@ function extractRecentGames($) {
       }
     }
 
-    recent_games.push({
-      title,
-      trophies_earned,
-      trophies_total
-    });
+    recent_games.push({ title, trophies_earned, trophies_total });
   });
 
   return recent_games;
@@ -184,7 +117,11 @@ function loadPreviousJson() {
 }
 
 async function run() {
-  const html = await getPageContent();
+  const html = fetchHtmlWithCurl();
+
+  // Optional: save debug snapshot to help if blocked later
+  fs.writeFileSync("debug.html", html);
+
   const $ = cheerio.load(html);
 
   const hasUserBar = $("#user-bar").length > 0;
@@ -192,14 +129,13 @@ async function run() {
   if (!hasUserBar) {
     console.error("❌ Could not find #user-bar. Likely bot protection / interstitial page.");
 
-    // IMPORTANT: do NOT overwrite previous good JSON.
+    // Do not overwrite last good JSON
     const prev = loadPreviousJson();
     if (prev) {
       console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
       return;
     }
 
-    // If no previous JSON exists, write a minimal placeholder
     const fallback = {
       source: URL,
       updated: new Date().toISOString(),
@@ -214,33 +150,23 @@ async function run() {
     };
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(fallback, null, 2));
-    console.log("✅ Wrote fallback psnprofiles.json");
     return;
   }
 
-  // Username + Level
   const username = cleanText($("#user-bar .username").first());
   const level = Number(cleanText($("#user-bar .level-box span").first()));
-
-  // Profile photo
   const profile_image = extractProfileImage($);
 
-  // Trophy counts
   const trophies = {
     total: textNumber($, "#user-bar li.total"),
     platinum: textNumber($, "#user-bar li.platinum"),
     gold: textNumber($, "#user-bar li.gold"),
     silver: textNumber($, "#user-bar li.silver"),
-    bronze: textNumber($, "#user-bar li.bronze"),
+    bronze: textNumber($, "#user-bar li.bronze")
   };
 
-  // Stats row (Games played, Completion, Points, World Rank, Country Rank, etc.)
   const stats = extractStats($);
-
-  // Recent trophies (5)
   const recent_trophies = extractRecentTrophies($);
-
-  // Recent games (5)
   const recent_games = extractRecentGames($);
 
   const output = {
@@ -256,25 +182,20 @@ async function run() {
   };
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
-
   console.log("✅ Wrote psnprofiles.json");
   console.log(`User: ${username} | Level: ${level}`);
-  console.log("Trophies:", trophies);
-  console.log("Recent trophies:", recent_trophies.length);
-  console.log("Recent games:", recent_games.length);
 }
 
 run().catch((e) => {
   console.error("❌ Error:", e.message);
 
-  // Do NOT overwrite good output if we already have it
+  // Keep previous json if it exists
   const prev = loadPreviousJson();
   if (prev) {
     console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
     process.exit(0);
   }
 
-  // Write minimal fallback if nothing exists yet
   fs.writeFileSync(
     OUT_FILE,
     JSON.stringify(
