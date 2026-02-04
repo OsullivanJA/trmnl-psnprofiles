@@ -1,54 +1,59 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-01-09T10:08:10.271Z",
+  "updated": "2026-02-04T12:33:39.997Z",
   "username": "OSullivanJA",
   "level": 296,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2163,
+    "total": 2183,
     "platinum": 26,
     "gold": 161,
     "silver": 420,
-    "bronze": 1556
+    "bronze": 1576
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.61%",
-    "Unearned Trophies": "1,585",
+    "Completion": "56.16%",
+    "Unearned Trophies": "1,622",
     "Trophies Per Day": "0.52",
-    "Views": "217",
-    "World Rank": "524,186",
-    "Country Rank": "3,931"
+    "Views": "221",
+    "World Rank": "525,101",
+    "Country Rank": "3,948"
   },
   "recent_trophies": [
     {
-      "trophyName": "Foodie",
-      "game": "Metal Gear Solid Δ: Snake Eater",
+      "trophyName": "Fish Out of Water",
+      "game": "Resident Evil Village",
       "rarityLabel": "Common"
     },
     {
-      "trophyName": "Cinephile",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Don't Touch the Sides",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Promise Kept",
-      "game": "Resident Evil 7: Biohazard",
+      "trophyName": "When You Gotta Go...",
+      "game": "Resident Evil Village",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Queensberry Rules",
-      "game": "Resident Evil 7: Biohazard",
+      "trophyName": "Got No Strings",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Squawk Shot",
+      "game": "Resident Evil Village",
       "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Strategist",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Common"
     }
   ],
   "recent_games": [
+    {
+      "title": "Resident Evil Village",
+      "trophies_earned": 20,
+      "trophies_total": 57
+    },
     {
       "title": "Metal Gear Solid Δ: Snake Eater",
       "trophies_earned": 13,
@@ -58,11 +63,6 @@
       "title": "Resident Evil 7: Biohazard",
       "trophies_earned": 36,
       "trophies_total": 59
-    },
-    {
-      "title": "Resident Evil Village",
-      "trophies_earned": 0,
-      "trophies_total": 57
     },
     {
       "title": "Death Stranding 2: On the Beach",
