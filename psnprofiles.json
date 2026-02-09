@@ -1,49 +1,49 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-02-04T12:33:39.997Z",
+  "updated": "2026-02-09T14:52:14.429Z",
   "username": "OSullivanJA",
-  "level": 296,
+  "level": 297,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2183,
+    "total": 2194,
     "platinum": 26,
     "gold": 161,
     "silver": 420,
-    "bronze": 1576
+    "bronze": 1587
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.16%",
-    "Unearned Trophies": "1,622",
+    "Completion": "56.34%",
+    "Unearned Trophies": "1,611",
     "Trophies Per Day": "0.52",
-    "Views": "221",
-    "World Rank": "525,101",
-    "Country Rank": "3,948"
+    "Views": "222",
+    "World Rank": "523,725",
+    "Country Rank": "3,944"
   },
   "recent_trophies": [
     {
-      "trophyName": "Fish Out of Water",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "When You Gotta Go...",
+      "trophyName": "Timber",
       "game": "Resident Evil Village",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Got No Strings",
+      "trophyName": "Great Dad",
       "game": "Resident Evil Village",
       "rarityLabel": "Common"
     },
     {
-      "trophyName": "Squawk Shot",
+      "trophyName": "Best Dad Ever",
       "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
+      "rarityLabel": "Common"
     },
     {
-      "trophyName": "Strategist",
+      "trophyName": "The Root of the Matter",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Mapmatician",
       "game": "Resident Evil Village",
       "rarityLabel": "Common"
     }
@@ -51,7 +51,7 @@
   "recent_games": [
     {
       "title": "Resident Evil Village",
-      "trophies_earned": 20,
+      "trophies_earned": 31,
       "trophies_total": 57
     },
     {
