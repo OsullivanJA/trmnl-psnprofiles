@@ -1,57 +1,57 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-02-09T14:52:14.429Z",
+  "updated": "2026-02-12T14:31:27.954Z",
   "username": "OSullivanJA",
   "level": 297,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2194,
+    "total": 2199,
     "platinum": 26,
-    "gold": 161,
-    "silver": 420,
-    "bronze": 1587
+    "gold": 163,
+    "silver": 422,
+    "bronze": 1588
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.34%",
-    "Unearned Trophies": "1,611",
+    "Completion": "56.63%",
+    "Unearned Trophies": "1,606",
     "Trophies Per Day": "0.52",
-    "Views": "222",
-    "World Rank": "523,725",
-    "Country Rank": "3,944"
+    "Views": "223",
+    "World Rank": "523,123",
+    "Country Rank": "3,937"
   },
   "recent_trophies": [
     {
-      "trophyName": "Timber",
+      "trophyName": "Dashing Dad",
       "game": "Resident Evil Village",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Great Dad",
+      "trophyName": "Frugal Father",
       "game": "Resident Evil Village",
-      "rarityLabel": "Common"
+      "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Best Dad Ever",
+      "trophyName": "Knives Out",
       "game": "Resident Evil Village",
-      "rarityLabel": "Common"
+      "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "The Root of the Matter",
+      "trophyName": "Don't Trust That Snake Oil",
       "game": "Resident Evil Village",
-      "rarityLabel": "Common"
+      "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Mapmatician",
+      "trophyName": "Quit Hanging Around",
       "game": "Resident Evil Village",
-      "rarityLabel": "Common"
+      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Resident Evil Village",
-      "trophies_earned": 31,
+      "trophies_earned": 36,
       "trophies_total": 57
     },
     {
