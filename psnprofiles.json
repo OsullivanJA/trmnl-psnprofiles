@@ -1,63 +1,63 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-02-12T14:31:27.954Z",
+  "updated": "2026-02-23T15:12:21.173Z",
   "username": "OSullivanJA",
   "level": 297,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2199,
+    "total": 2203,
     "platinum": 26,
     "gold": 163,
-    "silver": 422,
-    "bronze": 1588
+    "silver": 423,
+    "bronze": 1591
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.63%",
-    "Unearned Trophies": "1,606",
+    "Completion": "56.71%",
+    "Unearned Trophies": "1,602",
     "Trophies Per Day": "0.52",
-    "Views": "223",
-    "World Rank": "523,123",
-    "Country Rank": "3,937"
+    "Views": "225",
+    "World Rank": "522,610",
+    "Country Rank": "3,938"
   },
   "recent_trophies": [
     {
+      "trophyName": "Tell Me Where the Bomb Is",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Green Teen",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Serene Teen",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "It's Starting to Grow on Me",
+      "game": "Resident Evil Village",
+      "rarityLabel": "Uncommon"
+    },
+    {
       "trophyName": "Dashing Dad",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Frugal Father",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Knives Out",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Don't Trust That Snake Oil",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Quit Hanging Around",
       "game": "Resident Evil Village",
       "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
-      "title": "Resident Evil Village",
-      "trophies_earned": 36,
-      "trophies_total": 57
+      "title": "Metal Gear Solid Δ: Snake Eater",
+      "trophies_earned": 14,
+      "trophies_total": 46
     },
     {
-      "title": "Metal Gear Solid Δ: Snake Eater",
-      "trophies_earned": 13,
-      "trophies_total": 46
+      "title": "Resident Evil Village",
+      "trophies_earned": 39,
+      "trophies_total": 57
     },
     {
       "title": "Resident Evil 7: Biohazard",
