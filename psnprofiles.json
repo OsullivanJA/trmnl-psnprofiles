@@ -1,57 +1,57 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-02-23T15:12:21.173Z",
+  "updated": "2026-02-26T14:55:33.771Z",
   "username": "OSullivanJA",
-  "level": 297,
+  "level": 298,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2203,
+    "total": 2212,
     "platinum": 26,
     "gold": 163,
     "silver": 423,
-    "bronze": 1591
+    "bronze": 1600
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.71%",
-    "Unearned Trophies": "1,602",
+    "Completion": "56.86%",
+    "Unearned Trophies": "1,593",
     "Trophies Per Day": "0.52",
-    "Views": "225",
-    "World Rank": "522,610",
-    "Country Rank": "3,938"
+    "Views": "227",
+    "World Rank": "521,950",
+    "Country Rank": "3,933"
   },
   "recent_trophies": [
     {
-      "trophyName": "Tell Me Where the Bomb Is",
+      "trophyName": "A Good Man Is Hard to Find",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "You Snooze, You Lose",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "If It Bleeds, We Can Kill It",
       "game": "Metal Gear Solid Δ: Snake Eater",
       "rarityLabel": "Common"
     },
     {
-      "trophyName": "Green Teen",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
+      "trophyName": "Mud Scientist",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Common"
     },
     {
-      "trophyName": "Serene Teen",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "It's Starting to Grow on Me",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Dashing Dad",
-      "game": "Resident Evil Village",
-      "rarityLabel": "Uncommon"
+      "trophyName": "The End",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Common"
     }
   ],
   "recent_games": [
     {
       "title": "Metal Gear Solid Δ: Snake Eater",
-      "trophies_earned": 14,
+      "trophies_earned": 23,
       "trophies_total": 46
     },
     {
