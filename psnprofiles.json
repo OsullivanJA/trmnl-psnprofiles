@@ -1,57 +1,57 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-02-26T14:55:33.771Z",
+  "updated": "2026-03-06T11:17:12.179Z",
   "username": "OSullivanJA",
   "level": 298,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2212,
+    "total": 2224,
     "platinum": 26,
-    "gold": 163,
-    "silver": 423,
-    "bronze": 1600
+    "gold": 164,
+    "silver": 424,
+    "bronze": 1610
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "56.86%",
-    "Unearned Trophies": "1,593",
+    "Completion": "57.16%",
+    "Unearned Trophies": "1,581",
     "Trophies Per Day": "0.52",
-    "Views": "227",
-    "World Rank": "521,950",
-    "Country Rank": "3,933"
+    "Views": "228",
+    "World Rank": "520,296",
+    "Country Rank": "3,916"
   },
   "recent_trophies": [
     {
-      "trophyName": "A Good Man Is Hard to Find",
+      "trophyName": "Time Paradox",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Old Snake, New Tricks",
       "game": "Metal Gear Solid Δ: Snake Eater",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "You Snooze, You Lose",
+      "trophyName": "Like a Boss",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "PEACE WALKER",
       "game": "Metal Gear Solid Δ: Snake Eater",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "If It Bleeds, We Can Kill It",
+      "trophyName": "Ocelot Always Gets His Man",
       "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Mud Scientist",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "The End",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
+      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Metal Gear Solid Δ: Snake Eater",
-      "trophies_earned": 23,
+      "trophies_earned": 35,
       "trophies_total": 46
     },
     {
