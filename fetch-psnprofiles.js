@@ -1,9 +1,34 @@
+import { chromium } from "playwright-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import * as cheerio from "cheerio";
 import fs from "fs";
-import { execSync } from "child_process";
+
+chromium.use(StealthPlugin());
 
 const URL = "https://psnprofiles.com/OSullivanJA";
 const OUT_FILE = "psnprofiles.json";
+
+// Rotate through plausible desktop user agents to avoid a static fingerprint
+const USER_AGENTS = [
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+];
+
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomUserAgent() {
+  return USER_AGENTS[randomInt(0, USER_AGENTS.length - 1)];
+}
+
+// Random sleep to avoid perfectly predictable timing
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 function cleanText($el) {
   return $el.text().replace(/\s+/g, " ").trim();
@@ -16,8 +41,8 @@ function textNumber($, selector) {
 }
 
 function statValue($, el) {
-  return cheerio.load(el)
-    .root()
+  // Gets the value part excluding nested <span>Label</span>
+  return $(el)
     .clone()
     .children()
     .remove()
@@ -26,19 +51,74 @@ function statValue($, el) {
     .trim();
 }
 
-function fetchHtmlWithCurl() {
-  // Use a realistic user agent to avoid basic blocks
-  const cmd = `curl -L -s -A "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Mobile Safari/537.36" "${URL}"`;
-  return execSync(cmd, { encoding: "utf8", maxBuffer: 10 * 1024 * 1024 });
+async function getPageContent() {
+  // Random startup jitter (2-8 s) so runs don't hit the server at identical offsets
+  const jitter = randomInt(2000, 8000);
+  console.log(`⏳ Startup jitter: ${jitter}ms`);
+  await sleep(jitter);
+
+  const ua = randomUserAgent();
+  console.log(`🕵️  User-Agent: ${ua}`);
+
+  const browser = await chromium.launch({ headless: true });
+
+  const context = await browser.newContext({
+    userAgent: ua,
+    locale: "en-GB",
+    timezoneId: "Europe/Dublin",
+    viewport: { width: randomInt(1240, 1440), height: randomInt(700, 900) },
+    extraHTTPHeaders: {
+      "Accept-Language": "en-GB,en;q=0.9",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    },
+  });
+
+  const page = await context.newPage();
+
+  // Speed up: block images/fonts/media (we still parse image URLs from HTML)
+  await page.route("**/*", (route) => {
+    const type = route.request().resourceType();
+    if (type === "image" || type === "font" || type === "media") return route.abort();
+    return route.continue();
+  });
+
+  try {
+    await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 60000 });
+    // Randomise post-load wait (4-9 s) to mimic human reading time
+    const wait = randomInt(4000, 9000);
+    console.log(`⏳ Post-load wait: ${wait}ms`);
+    await page.waitForTimeout(wait);
+  } catch (err) {
+    console.error("⚠️ Navigation warning:", err.message);
+  }
+
+  const html = await page.content();
+
+  // Save debug output (helpful for troubleshooting)
+  fs.writeFileSync("debug.html", html);
+  try {
+    await page.screenshot({ path: "debug.png", fullPage: true });
+  } catch {}
+
+  await browser.close();
+  return html;
 }
 
 function extractProfileImage($) {
-  // Tries common selectors for avatar
-  const candidates = ["#user-bar img.avatar", "#user-bar img", "img.avatar"];
+  // PSNProfiles avatar is usually in an <img> element inside #user-bar
+  // We try a few common selectors to be resilient.
+  const candidates = [
+    "#user-bar img.avatar",
+    "#user-bar img",
+    ".profile img",
+    "img.avatar",
+  ];
+
   for (const sel of candidates) {
     const src = $(sel).first().attr("src");
     if (src && src.startsWith("http")) return src;
   }
+
   return "";
 }
 
@@ -47,12 +127,26 @@ function extractStats($) {
 
   $(".stats span.stat").each((_, el) => {
     const label = cleanText($(el).find("span").last());
-    const value = $(el).clone().children().remove().end().text().trim();
+    const value = statValue($, el);
     if (label) stats[label] = value;
   });
 
-  const worldRank = $(".stats .rank a").clone().children().remove().end().text().trim();
-  const countryRank = $(".stats .country-rank a").clone().children().remove().end().text().trim();
+  // World/Country ranks appear as links with nested <span>
+  const worldRank = $(".stats .rank a")
+    .clone()
+    .children()
+    .remove()
+    .end()
+    .text()
+    .trim();
+
+  const countryRank = $(".stats .country-rank a")
+    .clone()
+    .children()
+    .remove()
+    .end()
+    .text()
+    .trim();
 
   if (worldRank) stats["World Rank"] = worldRank;
   if (countryRank) stats["Country Rank"] = countryRank;
@@ -67,11 +161,18 @@ function extractRecentTrophies($) {
     if (i >= 5) return false;
 
     const trophyName = cleanText($(li).find("a.title").first());
+
+    // e.g. "9 hours ago in Metal Gear Solid Δ: Snake Eater"
     const earnedLine = cleanText($(li).find(".small_info_green"));
     const game = earnedLine.split(" in ").slice(1).join(" in ").trim();
+
     const rarityLabel = cleanText($(li).find(".typo-bottom nobr").first());
 
-    recent_trophies.push({ trophyName, game, rarityLabel });
+    recent_trophies.push({
+      trophyName,
+      game,
+      rarityLabel
+    });
   });
 
   return recent_trophies;
@@ -84,6 +185,8 @@ function extractRecentGames($) {
     if (i >= 5) return false;
 
     const title = cleanText($(tr).find("a.title").first());
+
+    // "12 of 46 Trophies" or "All 55 Trophies"
     const trophyInfo = cleanText($(tr).find("div.small-info").first());
 
     let trophies_earned = null;
@@ -101,7 +204,11 @@ function extractRecentGames($) {
       }
     }
 
-    recent_games.push({ title, trophies_earned, trophies_total });
+    recent_games.push({
+      title,
+      trophies_earned,
+      trophies_total
+    });
   });
 
   return recent_games;
@@ -117,11 +224,7 @@ function loadPreviousJson() {
 }
 
 async function run() {
-  const html = fetchHtmlWithCurl();
-
-  // Optional: save debug snapshot to help if blocked later
-  fs.writeFileSync("debug.html", html);
-
+  const html = await getPageContent();
   const $ = cheerio.load(html);
 
   const hasUserBar = $("#user-bar").length > 0;
@@ -129,13 +232,14 @@ async function run() {
   if (!hasUserBar) {
     console.error("❌ Could not find #user-bar. Likely bot protection / interstitial page.");
 
-    // Do not overwrite last good JSON
+    // IMPORTANT: do NOT overwrite previous good JSON.
     const prev = loadPreviousJson();
     if (prev) {
       console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
       return;
     }
 
+    // If no previous JSON exists, write a minimal placeholder
     const fallback = {
       source: URL,
       updated: new Date().toISOString(),
@@ -150,23 +254,33 @@ async function run() {
     };
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(fallback, null, 2));
+    console.log("✅ Wrote fallback psnprofiles.json");
     return;
   }
 
+  // Username + Level
   const username = cleanText($("#user-bar .username").first());
   const level = Number(cleanText($("#user-bar .level-box span").first()));
+
+  // Profile photo
   const profile_image = extractProfileImage($);
 
+  // Trophy counts
   const trophies = {
     total: textNumber($, "#user-bar li.total"),
     platinum: textNumber($, "#user-bar li.platinum"),
     gold: textNumber($, "#user-bar li.gold"),
     silver: textNumber($, "#user-bar li.silver"),
-    bronze: textNumber($, "#user-bar li.bronze")
+    bronze: textNumber($, "#user-bar li.bronze"),
   };
 
+  // Stats row (Games played, Completion, Points, World Rank, Country Rank, etc.)
   const stats = extractStats($);
+
+  // Recent trophies (5)
   const recent_trophies = extractRecentTrophies($);
+
+  // Recent games (5)
   const recent_games = extractRecentGames($);
 
   const output = {
@@ -182,20 +296,25 @@ async function run() {
   };
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
+
   console.log("✅ Wrote psnprofiles.json");
   console.log(`User: ${username} | Level: ${level}`);
+  console.log("Trophies:", trophies);
+  console.log("Recent trophies:", recent_trophies.length);
+  console.log("Recent games:", recent_games.length);
 }
 
 run().catch((e) => {
   console.error("❌ Error:", e.message);
 
-  // Keep previous json if it exists
+  // Do NOT overwrite good output if we already have it
   const prev = loadPreviousJson();
   if (prev) {
     console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
     process.exit(0);
   }
 
+  // Write minimal fallback if nothing exists yet
   fs.writeFileSync(
     OUT_FILE,
     JSON.stringify(
