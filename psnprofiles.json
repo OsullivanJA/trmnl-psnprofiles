@@ -1,78 +1,53 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-03-09T16:14:04.800Z",
+  "updated": "2026-03-09T17:15:08.534Z",
   "username": "OSullivanJA",
-  "level": 298,
+  "level": 299,
+  "level_progress": 6,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2226,
+    "total": 2229,
     "platinum": 26,
     "gold": 164,
     "silver": 425,
-    "bronze": 1611
+    "bronze": 1614
   },
   "stats": {
-    "Games Played": "89",
+    "Games Played": "90",
     "Completed Games": "27",
-    "Completion": "57.21%",
-    "Unearned Trophies": "1,579",
-    "Trophies Per Day": "0.52",
-    "Views": "229",
-    "World Rank": "520,721",
-    "Country Rank": "3,921"
+    "Completion": "52.77%"
   },
-  "recent_trophies": [
-    {
-      "trophyName": "Believe It or Not",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Serenity Now",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Time Paradox",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Old Snake, New Tricks",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Like a Boss",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Common"
-    }
-  ],
+  "recent_trophies": [],
   "recent_games": [
     {
-      "title": "Metal Gear Solid Δ: Snake Eater",
-      "trophies_earned": 37,
-      "trophies_total": 46
+      "title": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophies_earned": 38,
+      "trophies_total": 46,
+      "progress": 64
     },
     {
       "title": "Resident Evil Village",
       "trophies_earned": 39,
-      "trophies_total": 57
+      "trophies_total": 57,
+      "progress": 62
     },
     {
       "title": "Resident Evil 7: Biohazard",
       "trophies_earned": 36,
-      "trophies_total": 59
+      "trophies_total": 59,
+      "progress": 42
     },
     {
-      "title": "Death Stranding 2: On the Beach",
+      "title": "DEATH STRANDING 2: ON THE BEACH",
       "trophies_earned": 55,
-      "trophies_total": 55
+      "trophies_total": 55,
+      "progress": 100
     },
     {
-      "title": "NieR: Automata",
+      "title": "NieR:Automata",
       "trophies_earned": 28,
-      "trophies_total": 48
+      "trophies_total": 48,
+      "progress": 57
     }
   ]
 }
