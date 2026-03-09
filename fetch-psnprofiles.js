@@ -3,7 +3,6 @@ import {
   exchangeAccessCodeForAuthTokens,
   getUserTrophyProfileSummary,
   getUserTitles,
-  getProfileFromAccountId,
 } from "psn-api";
 import fs from "fs";
 
@@ -42,14 +41,9 @@ async function run() {
   const authorization = await exchangeAccessCodeForAuthTokens(accessCode);
   console.log("✅ Authorized.");
 
-  // ── Trophy profile summary (level, trophy counts, accountId) ──────────────
+  // ── Trophy profile summary (level, trophy counts) ───────────────────────
   const trophySummary = await getUserTrophyProfileSummary(authorization, "me");
-  const accountId = trophySummary.accountId;
   const earned = trophySummary.earnedTrophies;
-
-  // ── Profile (avatar URL, online ID) ───────────────────────────────────────
-  const profileResponse = await getProfileFromAccountId(authorization, accountId);
-  const profile = profileResponse.profile;
 
   // ── All titles (for stats + recent games) ─────────────────────────────────
   // Results are sorted by lastUpdatedDateTime descending — most recently played first.
@@ -86,10 +80,10 @@ async function run() {
   const output = {
     source: `https://psnprofiles.com/${USERNAME}`,
     updated: new Date().toISOString(),
-    username: profile.onlineId,
+    username: USERNAME,
     level: parseInt(trophySummary.trophyLevel, 10),
     level_progress: trophySummary.progress,
-    profile_image: profile.avatarUrl || FALLBACK_AVATAR,
+    profile_image: FALLBACK_AVATAR,
     trophies: {
       total: sumTrophies(earned),
       platinum: earned.platinum,
