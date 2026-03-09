@@ -1,27 +1,37 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-03-06T11:17:12.179Z",
+  "updated": "2026-03-09T16:14:04.800Z",
   "username": "OSullivanJA",
   "level": 298,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2224,
+    "total": 2226,
     "platinum": 26,
     "gold": 164,
-    "silver": 424,
-    "bronze": 1610
+    "silver": 425,
+    "bronze": 1611
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "27",
-    "Completion": "57.16%",
-    "Unearned Trophies": "1,581",
+    "Completion": "57.21%",
+    "Unearned Trophies": "1,579",
     "Trophies Per Day": "0.52",
-    "Views": "228",
-    "World Rank": "520,296",
-    "Country Rank": "3,916"
+    "Views": "229",
+    "World Rank": "520,721",
+    "Country Rank": "3,921"
   },
   "recent_trophies": [
+    {
+      "trophyName": "Believe It or Not",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Serenity Now",
+      "game": "Metal Gear Solid Δ: Snake Eater",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Time Paradox",
       "game": "Metal Gear Solid Δ: Snake Eater",
@@ -36,22 +46,12 @@
       "trophyName": "Like a Boss",
       "game": "Metal Gear Solid Δ: Snake Eater",
       "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "PEACE WALKER",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Ocelot Always Gets His Man",
-      "game": "Metal Gear Solid Δ: Snake Eater",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Metal Gear Solid Δ: Snake Eater",
-      "trophies_earned": 35,
+      "trophies_earned": 37,
       "trophies_total": 46
     },
     {
