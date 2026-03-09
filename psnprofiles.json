@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-03-09T17:30:37.333Z",
+  "updated": "2026-03-09T18:06:28.780Z",
   "username": "OSullivanJA",
   "level": 299,
   "level_progress": 6,
@@ -17,6 +17,7 @@
     "Completed Games": "27",
     "Completion": "52.77%"
   },
+  "token_expired": false,
   "recent_trophies": [
     {
       "trophyName": "Friendly Fire",
