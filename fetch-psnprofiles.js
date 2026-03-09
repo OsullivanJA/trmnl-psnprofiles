@@ -1,218 +1,18 @@
-import { chromium } from "playwright-extra";
-import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import * as cheerio from "cheerio";
+import {
+  exchangeNpssoForAccessCode,
+  exchangeAccessCodeForAuthTokens,
+  getUserTrophyProfileSummary,
+  getUserTitles,
+  getProfileFromAccountId,
+} from "psn-api";
 import fs from "fs";
 
-chromium.use(StealthPlugin());
-
-const URL = "https://psnprofiles.com/OSullivanJA";
+const NPSSO = process.env.PSN_NPSSO;
+const USERNAME = "OSullivanJA";
 const OUT_FILE = "psnprofiles.json";
 
-// Rotate through plausible desktop user agents to avoid a static fingerprint
-const USER_AGENTS = [
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
-];
-
-function randomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function randomUserAgent() {
-  return USER_AGENTS[randomInt(0, USER_AGENTS.length - 1)];
-}
-
-// Random sleep to avoid perfectly predictable timing
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-function cleanText($el) {
-  return $el.text().replace(/\s+/g, " ").trim();
-}
-
-function textNumber($, selector) {
-  const t = $(selector).first().text().replace(/\s+/g, " ").trim();
-  const m = t.match(/([\d,]+)/);
-  return m ? Number(m[1].replace(/,/g, "")) : null;
-}
-
-function statValue($, el) {
-  // Gets the value part excluding nested <span>Label</span>
-  return $(el)
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim();
-}
-
-async function getPageContent() {
-  // Random startup jitter (2-8 s) so runs don't hit the server at identical offsets
-  const jitter = randomInt(2000, 8000);
-  console.log(`⏳ Startup jitter: ${jitter}ms`);
-  await sleep(jitter);
-
-  const ua = randomUserAgent();
-  console.log(`🕵️  User-Agent: ${ua}`);
-
-  const browser = await chromium.launch({ headless: true });
-
-  const context = await browser.newContext({
-    userAgent: ua,
-    locale: "en-GB",
-    timezoneId: "Europe/Dublin",
-    viewport: { width: randomInt(1240, 1440), height: randomInt(700, 900) },
-    extraHTTPHeaders: {
-      "Accept-Language": "en-GB,en;q=0.9",
-      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    },
-  });
-
-  const page = await context.newPage();
-
-  // Speed up: block images/fonts/media (we still parse image URLs from HTML)
-  await page.route("**/*", (route) => {
-    const type = route.request().resourceType();
-    if (type === "image" || type === "font" || type === "media") return route.abort();
-    return route.continue();
-  });
-
-  try {
-    await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-    // Randomise post-load wait (4-9 s) to mimic human reading time
-    const wait = randomInt(4000, 9000);
-    console.log(`⏳ Post-load wait: ${wait}ms`);
-    await page.waitForTimeout(wait);
-  } catch (err) {
-    console.error("⚠️ Navigation warning:", err.message);
-  }
-
-  const html = await page.content();
-
-  // Save debug output (helpful for troubleshooting)
-  fs.writeFileSync("debug.html", html);
-  try {
-    await page.screenshot({ path: "debug.png", fullPage: true });
-  } catch {}
-
-  await browser.close();
-  return html;
-}
-
-function extractProfileImage($) {
-  // PSNProfiles avatar is usually in an <img> element inside #user-bar
-  // We try a few common selectors to be resilient.
-  const candidates = [
-    "#user-bar img.avatar",
-    "#user-bar img",
-    ".profile img",
-    "img.avatar",
-  ];
-
-  for (const sel of candidates) {
-    const src = $(sel).first().attr("src");
-    if (src && src.startsWith("http")) return src;
-  }
-
-  return "";
-}
-
-function extractStats($) {
-  const stats = {};
-
-  $(".stats span.stat").each((_, el) => {
-    const label = cleanText($(el).find("span").last());
-    const value = statValue($, el);
-    if (label) stats[label] = value;
-  });
-
-  // World/Country ranks appear as links with nested <span>
-  const worldRank = $(".stats .rank a")
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim();
-
-  const countryRank = $(".stats .country-rank a")
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim();
-
-  if (worldRank) stats["World Rank"] = worldRank;
-  if (countryRank) stats["Country Rank"] = countryRank;
-
-  return stats;
-}
-
-function extractRecentTrophies($) {
-  const recent_trophies = [];
-
-  $("#recent-trophies > li").each((i, li) => {
-    if (i >= 5) return false;
-
-    const trophyName = cleanText($(li).find("a.title").first());
-
-    // e.g. "9 hours ago in Metal Gear Solid Δ: Snake Eater"
-    const earnedLine = cleanText($(li).find(".small_info_green"));
-    const game = earnedLine.split(" in ").slice(1).join(" in ").trim();
-
-    const rarityLabel = cleanText($(li).find(".typo-bottom nobr").first());
-
-    recent_trophies.push({
-      trophyName,
-      game,
-      rarityLabel
-    });
-  });
-
-  return recent_trophies;
-}
-
-function extractRecentGames($) {
-  const recent_games = [];
-
-  $("#gamesTable > tbody > tr").each((i, tr) => {
-    if (i >= 5) return false;
-
-    const title = cleanText($(tr).find("a.title").first());
-
-    // "12 of 46 Trophies" or "All 55 Trophies"
-    const trophyInfo = cleanText($(tr).find("div.small-info").first());
-
-    let trophies_earned = null;
-    let trophies_total = null;
-
-    let m = trophyInfo.match(/(\d+)\s+of\s+(\d+)\s+Trophies/i);
-    if (m) {
-      trophies_earned = parseInt(m[1], 10);
-      trophies_total = parseInt(m[2], 10);
-    } else {
-      m = trophyInfo.match(/All\s+(\d+)\s+Trophies/i);
-      if (m) {
-        trophies_earned = parseInt(m[1], 10);
-        trophies_total = parseInt(m[1], 10);
-      }
-    }
-
-    recent_games.push({
-      title,
-      trophies_earned,
-      trophies_total
-    });
-  });
-
-  return recent_games;
-}
+// PSNProfiles avatar URL — used as fallback if the PSN API doesn't return one.
+const FALLBACK_AVATAR = "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png";
 
 function loadPreviousJson() {
   try {
@@ -223,112 +23,123 @@ function loadPreviousJson() {
   return null;
 }
 
+function sumTrophies(t) {
+  return (t.platinum || 0) + (t.gold || 0) + (t.silver || 0) + (t.bronze || 0);
+}
+
 async function run() {
-  const html = await getPageContent();
-  const $ = cheerio.load(html);
-
-  const hasUserBar = $("#user-bar").length > 0;
-
-  if (!hasUserBar) {
-    console.error("❌ Could not find #user-bar. Likely bot protection / interstitial page.");
-
-    // IMPORTANT: do NOT overwrite previous good JSON.
-    const prev = loadPreviousJson();
-    if (prev) {
-      console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
-      return;
-    }
-
-    // If no previous JSON exists, write a minimal placeholder
-    const fallback = {
-      source: URL,
-      updated: new Date().toISOString(),
-      error: "Blocked by bot protection (no #user-bar found).",
-      username: "",
-      level: 0,
-      profile_image: "",
-      trophies: { total: null, platinum: null, gold: null, silver: null, bronze: null },
-      stats: {},
-      recent_trophies: [],
-      recent_games: []
-    };
-
-    fs.writeFileSync(OUT_FILE, JSON.stringify(fallback, null, 2));
-    console.log("✅ Wrote fallback psnprofiles.json");
-    return;
+  if (!NPSSO) {
+    throw new Error(
+      "PSN_NPSSO environment variable is not set. " +
+      "Visit https://ca.account.sony.com/api/v1/ssocookie while logged into PlayStation.com to get your NPSSO token, " +
+      "then set it as a GitHub Actions secret named PSN_NPSSO."
+    );
   }
 
-  // Username + Level
-  const username = cleanText($("#user-bar .username").first());
-  const level = Number(cleanText($("#user-bar .level-box span").first()));
+  // ── Auth ──────────────────────────────────────────────────────────────────
+  console.log("🔑 Exchanging NPSSO for access token...");
+  const accessCode = await exchangeNpssoForAccessCode(NPSSO);
+  const authorization = await exchangeAccessCodeForAuthTokens(accessCode);
+  console.log("✅ Authorized.");
 
-  // Profile photo
-  const profile_image = extractProfileImage($);
+  // ── Trophy profile summary (level, trophy counts, accountId) ──────────────
+  const trophySummary = await getUserTrophyProfileSummary(authorization, "me");
+  const accountId = trophySummary.accountId;
+  const earned = trophySummary.earnedTrophies;
 
-  // Trophy counts
-  const trophies = {
-    total: textNumber($, "#user-bar li.total"),
-    platinum: textNumber($, "#user-bar li.platinum"),
-    gold: textNumber($, "#user-bar li.gold"),
-    silver: textNumber($, "#user-bar li.silver"),
-    bronze: textNumber($, "#user-bar li.bronze"),
-  };
+  // ── Profile (avatar URL, online ID) ───────────────────────────────────────
+  const profileResponse = await getProfileFromAccountId(authorization, accountId);
+  const profile = profileResponse.profile;
 
-  // Stats row (Games played, Completion, Points, World Rank, Country Rank, etc.)
-  const stats = extractStats($);
+  // ── All titles (for stats + recent games) ─────────────────────────────────
+  // Results are sorted by lastUpdatedDateTime descending — most recently played first.
+  console.log("📋 Fetching title list...");
+  const titlesResponse = await getUserTitles(authorization, "me", { limit: 800 });
+  const allTitles = titlesResponse.trophyTitles;
+  const gamesPlayed = titlesResponse.totalItemCount;
 
-  // Recent trophies (5)
-  const recent_trophies = extractRecentTrophies($);
+  // Completion % across all titles
+  let totalEarned = 0;
+  let totalDefined = 0;
+  let completedGames = 0;
 
-  // Recent games (5)
-  const recent_games = extractRecentGames($);
+  for (const t of allTitles) {
+    totalEarned += sumTrophies(t.earnedTrophies);
+    totalDefined += sumTrophies(t.definedTrophies);
+    if (t.progress === 100) completedGames++;
+  }
 
+  const completionPct =
+    totalDefined > 0
+      ? ((totalEarned / totalDefined) * 100).toFixed(2) + "%"
+      : "0%";
+
+  // ── Recent games (5 most recently played) ─────────────────────────────────
+  const recent_games = allTitles.slice(0, 5).map((t) => ({
+    title: t.trophyTitleName,
+    trophies_earned: sumTrophies(t.earnedTrophies),
+    trophies_total: sumTrophies(t.definedTrophies),
+    progress: t.progress ?? 0,
+  }));
+
+  // ── Build output ──────────────────────────────────────────────────────────
   const output = {
-    source: URL,
+    source: `https://psnprofiles.com/${USERNAME}`,
     updated: new Date().toISOString(),
-    username,
-    level,
-    profile_image,
-    trophies,
-    stats,
-    recent_trophies,
-    recent_games
+    username: profile.onlineId,
+    level: parseInt(trophySummary.trophyLevel, 10),
+    level_progress: trophySummary.progress,
+    profile_image: profile.avatarUrl || FALLBACK_AVATAR,
+    trophies: {
+      total: sumTrophies(earned),
+      platinum: earned.platinum,
+      gold: earned.gold,
+      silver: earned.silver,
+      bronze: earned.bronze,
+    },
+    stats: {
+      "Games Played": String(gamesPlayed),
+      "Completed Games": String(completedGames),
+      "Completion": completionPct,
+    },
+    // psn-api does not expose a "recently earned individual trophies" endpoint.
+    recent_trophies: [],
+    recent_games,
   };
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
 
   console.log("✅ Wrote psnprofiles.json");
-  console.log(`User: ${username} | Level: ${level}`);
-  console.log("Trophies:", trophies);
-  console.log("Recent trophies:", recent_trophies.length);
+  console.log(`User: ${output.username} | Level: ${output.level} (${output.level_progress}% to next)`);
+  console.log("Trophies:", output.trophies);
   console.log("Recent games:", recent_games.length);
 }
 
 run().catch((e) => {
   console.error("❌ Error:", e.message);
 
-  // Do NOT overwrite good output if we already have it
+  // Preserve the last good JSON rather than overwriting with an error state.
   const prev = loadPreviousJson();
   if (prev) {
     console.log("✅ Keeping previous psnprofiles.json (did not overwrite).");
     process.exit(0);
   }
 
-  // Write minimal fallback if nothing exists yet
   fs.writeFileSync(
     OUT_FILE,
     JSON.stringify(
       {
-        source: URL,
+        source: `https://psnprofiles.com/${USERNAME}`,
         updated: new Date().toISOString(),
         error: e.message,
         username: "",
         level: 0,
+        level_progress: 0,
         profile_image: "",
         trophies: { total: null, platinum: null, gold: null, silver: null, bronze: null },
         stats: {},
         recent_trophies: [],
-        recent_games: []
+        recent_games: [],
       },
       null,
       2
@@ -337,3 +148,4 @@ run().catch((e) => {
 
   process.exit(0);
 });
+
