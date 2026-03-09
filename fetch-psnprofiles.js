@@ -89,10 +89,23 @@ async function run() {
   }
 
   // ── Auth ──────────────────────────────────────────────────────────────────
-  console.log("🔑 Exchanging NPSSO for access token...");
-  const accessCode = await exchangeNpssoForAccessCode(NPSSO);
-  const authorization = await exchangeAccessCodeForAuthTokens(accessCode);
-  console.log("✅ Authorized.");
+  let authorization;
+  try {
+    console.log("🔑 Exchanging NPSSO for access token...");
+    const accessCode = await exchangeNpssoForAccessCode(NPSSO);
+    authorization = await exchangeAccessCodeForAuthTokens(accessCode);
+    console.log("✅ Authorized.");
+  } catch (authErr) {
+    console.error("❌ Auth failed — NPSSO has likely expired:", authErr.message);
+    const prev = loadPreviousJson();
+    if (prev) {
+      prev.token_expired = true;
+      prev.updated = new Date().toISOString();
+      fs.writeFileSync(OUT_FILE, JSON.stringify(prev, null, 2));
+      console.log("✅ Updated psnprofiles.json with token_expired: true (cached data preserved).");
+    }
+    return;
+  }
 
   // ── Trophy profile summary (level, trophy counts) ───────────────────────
   const trophySummary = await getUserTrophyProfileSummary(authorization, "me");
@@ -154,6 +167,7 @@ async function run() {
       "Completed Games": String(completedGames),
       "Completion": completionPct,
     },
+    token_expired: false,
     recent_trophies,
     recent_games,
   };
