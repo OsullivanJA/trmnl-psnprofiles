@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-03-13T07:11:01.226Z",
+  "updated": "2026-03-14T07:04:51.612Z",
   "username": "OSullivanJA",
   "level": 299,
-  "level_progress": 10,
+  "level_progress": 30,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2230,
+    "total": 2233,
     "platinum": 26,
     "gold": 164,
-    "silver": 425,
+    "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "90",
     "Completed Games": "27",
-    "Completion": "52.79%"
+    "Completion": "52.86%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Wax On, Wax Off",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "It's Duck Season",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "It Ain't Easy Being Green",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Mostly Dead",
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
@@ -30,32 +48,14 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "bronze",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Believe It or Not",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Serenity Now",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Time Paradox",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophies_earned": 39,
+      "trophies_earned": 42,
       "trophies_total": 46,
-      "progress": 65
+      "progress": 74
     },
     {
       "title": "Resident Evil Village",
