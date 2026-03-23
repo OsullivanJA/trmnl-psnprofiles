@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-03-23T07:38:47.175Z",
+  "updated": "2026-03-23T14:26:25.084Z",
   "username": "OSullivanJA",
   "level": 299,
-  "level_progress": 50,
+  "level_progress": 70,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2234,
+    "total": 2235,
     "platinum": 26,
-    "gold": 165,
+    "gold": 166,
     "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "90",
     "Completed Games": "27",
-    "Completion": "52.89%"
+    "Completion": "52.91%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Gastronome",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "A Snake Has Many Skins",
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
@@ -42,20 +48,14 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Mostly Dead",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophies_earned": 43,
+      "trophies_earned": 44,
       "trophies_total": 46,
-      "progress": 82
+      "progress": 91
     },
     {
       "title": "Resident Evil Village",
