@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-10T07:58:02.342Z",
+  "updated": "2026-04-11T07:15:40.531Z",
   "username": "OSullivanJA",
   "level": 299,
   "level_progress": 70,
@@ -52,6 +52,12 @@
   ],
   "recent_games": [
     {
+      "title": "Tetris® Effect",
+      "trophies_earned": 0,
+      "trophies_total": 43,
+      "progress": 0
+    },
+    {
       "title": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophies_earned": 44,
       "trophies_total": 46,
@@ -74,12 +80,6 @@
       "trophies_earned": 55,
       "trophies_total": 55,
       "progress": 100
-    },
-    {
-      "title": "NieR:Automata",
-      "trophies_earned": 28,
-      "trophies_total": 48,
-      "progress": 57
     }
   ]
 }
