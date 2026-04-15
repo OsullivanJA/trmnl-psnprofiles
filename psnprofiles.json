@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-14T08:02:32.558Z",
+  "updated": "2026-04-15T08:03:33.274Z",
   "username": "OSullivanJA",
-  "level": 299,
-  "level_progress": 70,
+  "level": 300,
+  "level_progress": 28,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2235,
-    "platinum": 26,
-    "gold": 166,
+    "total": 2237,
+    "platinum": 27,
+    "gold": 167,
     "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "90",
-    "Completed Games": "27",
-    "Completion": "52.91%"
+    "Completed Games": "28",
+    "Completion": "52.96%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Endless Battle",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Ultra Rare"
+    },
+    {
+      "trophyName": "FOXHOUND",
+      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "Gastronome",
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
@@ -36,32 +48,20 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "silver",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "It's Duck Season",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "It Ain't Easy Being Green",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "trophies_earned": 46,
+      "trophies_total": 46,
+      "progress": 100
+    },
     {
       "title": "Tetris® Effect",
       "trophies_earned": 0,
       "trophies_total": 43,
       "progress": 0
-    },
-    {
-      "title": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophies_earned": 44,
-      "trophies_total": 46,
-      "progress": 91
     },
     {
       "title": "Resident Evil Village",
