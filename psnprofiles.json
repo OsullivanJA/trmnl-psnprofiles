@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-15T08:03:33.274Z",
+  "updated": "2026-04-16T08:02:13.560Z",
   "username": "OSullivanJA",
   "level": 300,
   "level_progress": 28,
@@ -13,9 +13,9 @@
     "bronze": 1615
   },
   "stats": {
-    "Games Played": "90",
+    "Games Played": "86",
     "Completed Games": "28",
-    "Completion": "52.96%"
+    "Completion": "55.69%"
   },
   "token_expired": false,
   "recent_trophies": [
@@ -58,12 +58,6 @@
       "progress": 100
     },
     {
-      "title": "Tetris® Effect",
-      "trophies_earned": 0,
-      "trophies_total": 43,
-      "progress": 0
-    },
-    {
       "title": "Resident Evil Village",
       "trophies_earned": 39,
       "trophies_total": 57,
@@ -80,6 +74,12 @@
       "trophies_earned": 55,
       "trophies_total": 55,
       "progress": 100
+    },
+    {
+      "title": "NieR:Automata",
+      "trophies_earned": 28,
+      "trophies_total": 48,
+      "progress": 57
     }
   ]
 }
