@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-18T07:33:59.577Z",
+  "updated": "2026-04-19T07:44:40.686Z",
   "username": "OSullivanJA",
   "level": 300,
-  "level_progress": 28,
+  "level_progress": 38,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2237,
+    "total": 2238,
     "platinum": 27,
-    "gold": 167,
+    "gold": 168,
     "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "86",
     "Completed Games": "28",
-    "Completion": "55.69%"
+    "Completion": "55.71%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Elite",
+      "game": "METAL GEAR SOLID - Master Collection Version",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "Endless Battle",
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
@@ -42,15 +48,15 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "gold",
       "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Wax On, Wax Off",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "METAL GEAR SOLID - Master Collection Version",
+      "trophies_earned": 17,
+      "trophies_total": 19,
+      "progress": 90
+    },
     {
       "title": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophies_earned": 46,
@@ -74,12 +80,6 @@
       "trophies_earned": 55,
       "trophies_total": 55,
       "progress": 100
-    },
-    {
-      "title": "NieR:Automata",
-      "trophies_earned": 28,
-      "trophies_total": 48,
-      "progress": 57
     }
   ]
 }
