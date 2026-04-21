@@ -1,2 +1,2 @@
 # trmnl-psnprofiles
-Fetch information from PSNProfiles for username
+Fetch information from PSN API for username
