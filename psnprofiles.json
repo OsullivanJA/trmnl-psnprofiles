@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-22T08:04:29.206Z",
+  "updated": "2026-04-23T08:09:04.668Z",
   "username": "OSullivanJA",
   "level": 300,
   "level_progress": 38,
@@ -17,7 +17,7 @@
     "Completed Games": "28",
     "Completion": "55.71%"
   },
-  "token_expired": true,
+  "token_expired": false,
   "recent_trophies": [
     {
       "trophyName": "Elite",
