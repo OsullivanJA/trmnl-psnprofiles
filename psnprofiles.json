@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-04-28T08:38:48.093Z",
+  "updated": "2026-04-29T08:31:59.213Z",
   "username": "OSullivanJA",
   "level": 300,
-  "level_progress": 38,
+  "level_progress": 81,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2238,
-    "platinum": 27,
-    "gold": 168,
+    "total": 2240,
+    "platinum": 28,
+    "gold": 169,
     "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "86",
-    "Completed Games": "28",
-    "Completion": "55.71%"
+    "Completed Games": "29",
+    "Completion": "55.76%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Solidified",
+      "game": "METAL GEAR SOLID - Master Collection Version",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Ultra Rare"
+    },
+    {
+      "trophyName": "Practice Makes Perfect",
+      "game": "METAL GEAR SOLID - Master Collection Version",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "Elite",
       "game": "METAL GEAR SOLID - Master Collection Version",
@@ -36,26 +48,14 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "gold",
       "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Gastronome",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "A Snake Has Many Skins",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
     }
   ],
   "recent_games": [
     {
       "title": "METAL GEAR SOLID - Master Collection Version",
-      "trophies_earned": 17,
+      "trophies_earned": 19,
       "trophies_total": 19,
-      "progress": 90
+      "progress": 100
     },
     {
       "title": "METAL GEAR SOLID Δ: SNAKE EATER",
