@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-05-08T07:56:15.351Z",
+  "updated": "2026-05-09T08:09:07.637Z",
   "username": "OSullivanJA",
   "level": 300,
   "level_progress": 81,
@@ -17,7 +17,7 @@
     "Completed Games": "29",
     "Completion": "55.76%"
   },
-  "token_expired": false,
+  "token_expired": true,
   "recent_trophies": [
     {
       "trophyName": "Solidified",
