@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-05-18T10:39:16.305Z",
+  "updated": "2026-05-19T08:37:25.370Z",
   "username": "OSullivanJA",
   "level": 300,
-  "level_progress": 81,
+  "level_progress": 91,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2240,
+    "total": 2241,
     "platinum": 28,
-    "gold": 169,
+    "gold": 170,
     "silver": 428,
     "bronze": 1615
   },
   "stats": {
     "Games Played": "86",
-    "Completed Games": "29",
-    "Completion": "55.76%"
+    "Completed Games": "30",
+    "Completion": "55.79%"
   },
-  "token_expired": true,
+  "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "I Would Do It All Over Again",
+      "game": "The Last of Us™ Part II Remastered",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "Solidified",
       "game": "METAL GEAR SOLID - Master Collection Version",
@@ -42,15 +48,15 @@
       "game": "METAL GEAR SOLID Δ: SNAKE EATER",
       "trophyGrade": "platinum",
       "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "FOXHOUND",
-      "game": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "The Last of Us™ Part II Remastered",
+      "trophies_earned": 45,
+      "trophies_total": 45,
+      "progress": 100
+    },
     {
       "title": "METAL GEAR SOLID - Master Collection Version",
       "trophies_earned": 19,
@@ -74,12 +80,6 @@
       "trophies_earned": 36,
       "trophies_total": 59,
       "progress": 42
-    },
-    {
-      "title": "DEATH STRANDING 2: ON THE BEACH",
-      "trophies_earned": 55,
-      "trophies_total": 55,
-      "progress": 100
     }
   ]
 }
