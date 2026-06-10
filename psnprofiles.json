@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-09T10:01:21.622Z",
+  "updated": "2026-06-10T10:21:27.404Z",
   "username": "OSullivanJA",
   "level": 300,
-  "level_progress": 93,
+  "level_progress": 98,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2242,
+    "total": 2244,
     "platinum": 28,
     "gold": 170,
-    "silver": 428,
-    "bronze": 1616
+    "silver": 429,
+    "bronze": 1617
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.29%"
+    "Completion": "55.34%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "No Fungus Among Us",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Last Mown Standing",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "SPUDOW!",
       "game": "Plants vs. Zombies™: Replanted",
@@ -36,26 +48,14 @@
       "game": "METAL GEAR SOLID - Master Collection Version",
       "trophyGrade": "platinum",
       "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Practice Makes Perfect",
-      "game": "METAL GEAR SOLID - Master Collection Version",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Elite",
-      "game": "METAL GEAR SOLID - Master Collection Version",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 1,
+      "trophies_earned": 3,
       "trophies_total": 38,
-      "progress": 1
+      "progress": 5
     },
     {
       "title": "The Last of Us™ Part II Remastered",
