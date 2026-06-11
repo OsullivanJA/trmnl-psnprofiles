@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-10T10:21:27.404Z",
+  "updated": "2026-06-11T10:56:54.626Z",
   "username": "OSullivanJA",
-  "level": 300,
-  "level_progress": 98,
+  "level": 301,
+  "level_progress": 5,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2244,
+    "total": 2247,
     "platinum": 28,
     "gold": 170,
-    "silver": 429,
-    "bronze": 1617
+    "silver": 430,
+    "bronze": 1619
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.34%"
+    "Completion": "55.41%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Explodonator",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Roll Some Heads",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Penny Pincher",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
     {
       "trophyName": "No Fungus Among Us",
       "game": "Plants vs. Zombies™: Replanted",
@@ -30,32 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "SPUDOW!",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "I Would Do It All Over Again",
-      "game": "The Last of Us™ Part II Remastered",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Solidified",
-      "game": "METAL GEAR SOLID - Master Collection Version",
-      "trophyGrade": "platinum",
-      "rarityLabel": "Ultra Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 3,
+      "trophies_earned": 6,
       "trophies_total": 38,
-      "progress": 5
+      "progress": 11
     },
     {
       "title": "The Last of Us™ Part II Remastered",
