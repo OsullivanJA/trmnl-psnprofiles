@@ -1,61 +1,61 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-11T10:56:54.626Z",
+  "updated": "2026-06-12T10:38:35.216Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 5,
+  "level_progress": 13,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2247,
+    "total": 2252,
     "platinum": 28,
     "gold": 170,
     "silver": 430,
-    "bronze": 1619
+    "bronze": 1624
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.41%"
+    "Completion": "55.54%"
   },
   "token_expired": false,
   "recent_trophies": [
     {
-      "trophyName": "Explodonator",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Roll Some Heads",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Penny Pincher",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "No Fungus Among Us",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Last Mown Standing",
+      "trophyName": "Life Half Empty",
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Life Half Full",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Disco is Undead",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Sunny Days",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Don't Pea In The Pool",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 6,
+      "trophies_earned": 11,
       "trophies_total": 38,
-      "progress": 11
+      "progress": 19
     },
     {
       "title": "The Last of Us™ Part II Remastered",
