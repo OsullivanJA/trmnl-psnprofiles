@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-12T10:38:35.216Z",
+  "updated": "2026-06-13T09:32:16.739Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 13,
+  "level_progress": 16,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2252,
+    "total": 2253,
     "platinum": 28,
     "gold": 170,
-    "silver": 430,
+    "silver": 431,
     "bronze": 1624
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.54%"
+    "Completion": "55.56%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Grounded",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Life Half Empty",
       "game": "Plants vs. Zombies™: Replanted",
@@ -42,20 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Don't Pea In The Pool",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 11,
+      "trophies_earned": 12,
       "trophies_total": 38,
-      "progress": 19
+      "progress": 22
     },
     {
       "title": "The Last of Us™ Part II Remastered",
