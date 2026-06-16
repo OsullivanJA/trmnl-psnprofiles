@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-15T12:40:44.028Z",
+  "updated": "2026-06-16T11:32:14.785Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 16,
+  "level_progress": 20,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2253,
+    "total": 2254,
     "platinum": 28,
     "gold": 170,
-    "silver": 431,
+    "silver": 432,
     "bronze": 1624
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.56%"
+    "Completion": "55.59%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Home Lawn Security",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Grounded",
       "game": "Plants vs. Zombies™: Replanted",
@@ -42,20 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Sunny Days",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 12,
+      "trophies_earned": 13,
       "trophies_total": 38,
-      "progress": 22
+      "progress": 25
     },
     {
       "title": "The Last of Us™ Part II Remastered",
