@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-16T11:32:14.785Z",
+  "updated": "2026-06-17T11:15:51.335Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 20,
+  "level_progress": 23,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2254,
+    "total": 2256,
     "platinum": 28,
     "gold": 170,
     "silver": 432,
-    "bronze": 1624
+    "bronze": 1626
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.59%"
+    "Completion": "55.64%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Smashing!",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Pyromaniac",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Home Lawn Security",
       "game": "Plants vs. Zombies™: Replanted",
@@ -36,26 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Life Half Full",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Disco is Undead",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 13,
+      "trophies_earned": 15,
       "trophies_total": 38,
-      "progress": 25
+      "progress": 28
     },
     {
       "title": "The Last of Us™ Part II Remastered",
