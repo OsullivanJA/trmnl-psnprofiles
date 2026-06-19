@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-18T10:45:36.516Z",
+  "updated": "2026-06-19T10:55:36.126Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 23,
+  "level_progress": 26,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2256,
+    "total": 2258,
     "platinum": 28,
     "gold": 170,
     "silver": 432,
-    "bronze": 1626
+    "bronze": 1628
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.64%"
+    "Completion": "55.68%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "I, Win",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Ask Me About Mustache Mode",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Smashing!",
       "game": "Plants vs. Zombies™: Replanted",
@@ -36,26 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "silver",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Grounded",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Life Half Empty",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 15,
+      "trophies_earned": 17,
       "trophies_total": 38,
-      "progress": 28
+      "progress": 31
     },
     {
       "title": "The Last of Us™ Part II Remastered",
