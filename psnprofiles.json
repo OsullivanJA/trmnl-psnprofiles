@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-21T10:03:39.348Z",
+  "updated": "2026-06-22T12:23:41.850Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 26,
+  "level_progress": 40,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2258,
+    "total": 2261,
     "platinum": 28,
-    "gold": 170,
+    "gold": 171,
     "silver": 432,
-    "bronze": 1628
+    "bronze": 1630
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.68%"
+    "Completion": "55.76%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Sproing! Sproing!",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Good Morning",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Beyond The Grave",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "I, Win",
       "game": "Plants vs. Zombies™: Replanted",
@@ -30,32 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Smashing!",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Pyromaniac",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Home Lawn Security",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 17,
+      "trophies_earned": 20,
       "trophies_total": 38,
-      "progress": 31
+      "progress": 43
     },
     {
       "title": "The Last of Us™ Part II Remastered",
