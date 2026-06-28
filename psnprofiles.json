@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-06-27T08:48:25.981Z",
+  "updated": "2026-06-28T09:30:20.833Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 46,
+  "level_progress": 50,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2264,
+    "total": 2265,
     "platinum": 28,
     "gold": 171,
-    "silver": 433,
+    "silver": 434,
     "bronze": 1632
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.83%"
+    "Completion": "55.86%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Morticulturalist",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Shooting Star",
       "game": "Plants vs. Zombies™: Replanted",
@@ -42,20 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Good Morning",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 23,
+      "trophies_earned": 24,
       "trophies_total": 38,
-      "progress": 49
+      "progress": 52
     },
     {
       "title": "The Last of Us™ Part II Remastered",
