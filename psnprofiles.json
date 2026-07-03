@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-07-02T09:29:46.293Z",
+  "updated": "2026-07-03T09:32:50.176Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 53,
+  "level_progress": 65,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2266,
+    "total": 2268,
     "platinum": 28,
-    "gold": 171,
+    "gold": 172,
     "silver": 435,
-    "bronze": 1632
+    "bronze": 1633
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "55.88%"
+    "Completion": "55.93%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Second Life",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Popcorn Party",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Cryptozombologist",
       "game": "Plants vs. Zombies™: Replanted",
@@ -36,26 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Wall-Not Attack",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Sol Invictus",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 25,
+      "trophies_earned": 27,
       "trophies_total": 38,
-      "progress": 55
+      "progress": 65
     },
     {
       "title": "The Last of Us™ Part II Remastered",
