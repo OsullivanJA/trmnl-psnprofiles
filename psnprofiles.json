@@ -1,6 +1,6 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-07-17T08:25:37.149Z",
+  "updated": "2026-07-18T08:05:45.111Z",
   "username": "OSullivanJA",
   "level": 301,
   "level_progress": 81,
@@ -17,7 +17,7 @@
     "Completed Games": "30",
     "Completion": "56.03%"
   },
-  "token_expired": false,
+  "token_expired": true,
   "recent_trophies": [
     {
       "trophyName": "Towering Wisdom",
