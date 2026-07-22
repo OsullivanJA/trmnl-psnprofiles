@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-07-21T13:46:15.630Z",
+  "updated": "2026-07-22T08:41:25.113Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 81,
+  "level_progress": 85,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2272,
+    "total": 2273,
     "platinum": 28,
     "gold": 173,
-    "silver": 436,
+    "silver": 437,
     "bronze": 1635
   },
   "stats": {
     "Games Played": "87",
     "Completed Games": "30",
-    "Completion": "56.03%"
+    "Completion": "56.05%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Alive and Planting",
+      "game": "Plants vs. Zombies™: Replanted",
+      "trophyGrade": "silver",
+      "rarityLabel": "Ultra Rare"
+    },
     {
       "trophyName": "Towering Wisdom",
       "game": "Plants vs. Zombies™: Replanted",
@@ -42,20 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "bronze",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Second Life",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 31,
+      "trophies_earned": 32,
       "trophies_total": 38,
-      "progress": 80
+      "progress": 83
     },
     {
       "title": "The Last of Us™ Part II Remastered",
