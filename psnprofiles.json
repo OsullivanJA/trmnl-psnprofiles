@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-06T08:50:38.696Z",
+  "updated": "2026-08-07T07:38:32.530Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 85,
+  "level_progress": 86,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2273,
+    "total": 2274,
     "platinum": 28,
     "gold": 173,
     "silver": 437,
-    "bronze": 1635
+    "bronze": 1636
   },
   "stats": {
-    "Games Played": "87",
+    "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.05%"
+    "Completion": "55.84%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Extended Testing Opportunity",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Alive and Planting",
       "game": "Plants vs. Zombies™: Replanted",
@@ -42,15 +48,15 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "gold",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Cloud Cover",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "Bridge Constructor Portal trophies",
+      "trophies_earned": 1,
+      "trophies_total": 17,
+      "progress": 1
+    },
     {
       "title": "Plants vs. Zombies™: Replanted",
       "trophies_earned": 32,
@@ -74,12 +80,6 @@
       "trophies_earned": 46,
       "trophies_total": 46,
       "progress": 100
-    },
-    {
-      "title": "Resident Evil Village",
-      "trophies_earned": 39,
-      "trophies_total": 57,
-      "progress": 62
     }
   ]
 }
