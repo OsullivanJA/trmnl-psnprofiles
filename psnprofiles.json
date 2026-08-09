@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-08T07:11:06.920Z",
+  "updated": "2026-08-09T07:13:37.282Z",
   "username": "OSullivanJA",
   "level": 301,
-  "level_progress": 88,
+  "level_progress": 93,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2275,
+    "total": 2277,
     "platinum": 28,
     "gold": 173,
-    "silver": 437,
-    "bronze": 1637
+    "silver": 438,
+    "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "55.87%"
+    "Completion": "55.92%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "66% Loss",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Food and Artificial Sunlight",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "No Hard Feelings",
       "game": "Bridge Constructor Portal trophies",
@@ -36,26 +48,14 @@
       "game": "Plants vs. Zombies™: Replanted",
       "trophyGrade": "silver",
       "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Towering Wisdom",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Immortal",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 2,
+      "trophies_earned": 4,
       "trophies_total": 17,
-      "progress": 3
+      "progress": 7
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
