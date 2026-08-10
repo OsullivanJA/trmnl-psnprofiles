@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-09T07:13:37.282Z",
+  "updated": "2026-08-10T08:01:39.565Z",
   "username": "OSullivanJA",
-  "level": 301,
-  "level_progress": 93,
+  "level": 302,
+  "level_progress": 6,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2277,
+    "total": 2279,
     "platinum": 28,
-    "gold": 173,
-    "silver": 438,
+    "gold": 174,
+    "silver": 439,
     "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "55.92%"
+    "Completion": "55.97%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Post-Insignificance",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "You monster.",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "66% Loss",
       "game": "Bridge Constructor Portal trophies",
@@ -36,26 +48,14 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Extended Testing Opportunity",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Alive and Planting",
-      "game": "Plants vs. Zombies™: Replanted",
-      "trophyGrade": "silver",
-      "rarityLabel": "Ultra Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 4,
+      "trophies_earned": 6,
       "trophies_total": 17,
-      "progress": 7
+      "progress": 20
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
