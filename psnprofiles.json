@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-11T07:33:21.311Z",
+  "updated": "2026-08-12T07:48:39.394Z",
   "username": "OSullivanJA",
   "level": 302,
-  "level_progress": 6,
+  "level_progress": 36,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2279,
+    "total": 2282,
     "platinum": 28,
-    "gold": 174,
+    "gold": 177,
     "silver": 439,
     "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "55.97%"
+    "Completion": "56.04%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Entry-Exit Relay Repeater System",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Aerial Mobility Support System",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "For Science!",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Post-Insignificance",
       "game": "Bridge Constructor Portal trophies",
@@ -30,32 +48,14 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "66% Loss",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Food and Artificial Sunlight",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "No Hard Feelings",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 6,
+      "trophies_earned": 9,
       "trophies_total": 17,
-      "progress": 20
+      "progress": 47
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
