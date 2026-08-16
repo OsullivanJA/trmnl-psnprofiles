@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-15T06:55:13.235Z",
+  "updated": "2026-08-16T06:56:32.839Z",
   "username": "OSullivanJA",
   "level": 302,
-  "level_progress": 36,
+  "level_progress": 53,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2282,
+    "total": 2285,
     "platinum": 28,
-    "gold": 177,
-    "silver": 439,
+    "gold": 178,
+    "silver": 441,
     "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.04%"
+    "Completion": "56.11%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Centrifugal Convoy Adjustment System",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "66% Delivery",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Official Pre-Admittance",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Entry-Exit Relay Repeater System",
       "game": "Bridge Constructor Portal trophies",
@@ -30,32 +48,14 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "gold",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "For Science!",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Post-Insignificance",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "You monster.",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 9,
+      "trophies_earned": 12,
       "trophies_total": 17,
-      "progress": 47
+      "progress": 63
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
