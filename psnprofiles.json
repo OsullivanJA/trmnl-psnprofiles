@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-19T07:02:37.270Z",
+  "updated": "2026-08-20T07:03:17.768Z",
   "username": "OSullivanJA",
   "level": 302,
-  "level_progress": 53,
+  "level_progress": 63,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2285,
+    "total": 2286,
     "platinum": 28,
-    "gold": 178,
+    "gold": 179,
     "silver": 441,
     "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.11%"
+    "Completion": "56.14%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Full Chief Custodian candidate",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Centrifugal Convoy Adjustment System",
       "game": "Bridge Constructor Portal trophies",
@@ -42,20 +48,14 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "gold",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Aerial Mobility Support System",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 12,
+      "trophies_earned": 13,
       "trophies_total": 17,
-      "progress": 63
+      "progress": 72
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
