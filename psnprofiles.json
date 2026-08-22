@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-21T07:04:48.701Z",
+  "updated": "2026-08-22T06:56:46.929Z",
   "username": "OSullivanJA",
   "level": 302,
-  "level_progress": 63,
+  "level_progress": 76,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2286,
+    "total": 2288,
     "platinum": 28,
-    "gold": 179,
-    "silver": 441,
+    "gold": 180,
+    "silver": 442,
     "bronze": 1638
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.14%"
+    "Completion": "56.19%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "The Documents!",
+      "game": "Red Matter",
+      "trophyGrade": "gold",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "We're getting very close Epsilon",
+      "game": "Red Matter",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Full Chief Custodian candidate",
       "game": "Bridge Constructor Portal trophies",
@@ -36,21 +48,15 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Official Pre-Admittance",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Entry-Exit Relay Repeater System",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "Red Matter",
+      "trophies_earned": 12,
+      "trophies_total": 20,
+      "progress": 66
+    },
     {
       "title": "Bridge Constructor Portal trophies",
       "trophies_earned": 13,
@@ -73,12 +79,6 @@
       "title": "METAL GEAR SOLID - Master Collection Version",
       "trophies_earned": 19,
       "trophies_total": 19,
-      "progress": 100
-    },
-    {
-      "title": "METAL GEAR SOLID Δ: SNAKE EATER",
-      "trophies_earned": 46,
-      "trophies_total": 46,
       "progress": 100
     }
   ]
