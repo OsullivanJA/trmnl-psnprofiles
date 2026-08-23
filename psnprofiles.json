@@ -1,61 +1,67 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-22T06:56:46.929Z",
+  "updated": "2026-08-23T06:58:12.439Z",
   "username": "OSullivanJA",
   "level": 302,
-  "level_progress": 76,
+  "level_progress": 96,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2288,
+    "total": 2294,
     "platinum": 28,
-    "gold": 180,
-    "silver": 442,
-    "bronze": 1638
+    "gold": 181,
+    "silver": 443,
+    "bronze": 1642
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.19%"
+    "Completion": "56.34%"
   },
   "token_expired": false,
   "recent_trophies": [
     {
-      "trophyName": "The Documents!",
-      "game": "Red Matter",
-      "trophyGrade": "gold",
+      "trophyName": "Hammertime",
+      "game": "CROSSFIRE: Sierra Squad",
+      "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "We're getting very close Epsilon",
-      "game": "Red Matter",
-      "trophyGrade": "silver",
+      "trophyName": "Mini? More like puny",
+      "game": "CROSSFIRE: Sierra Squad",
+      "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
     },
     {
-      "trophyName": "Full Chief Custodian candidate",
-      "game": "Bridge Constructor Portal trophies",
+      "trophyName": "David vs Goliath",
+      "game": "CROSSFIRE: Sierra Squad",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Phew, I needed that.",
+      "game": "CROSSFIRE: Sierra Squad",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Epsilon? No, no, no, no!!",
+      "game": "Red Matter",
       "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Centrifugal Convoy Adjustment System",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "66% Delivery",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
+      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
+      "title": "CROSSFIRE: Sierra Squad",
+      "trophies_earned": 7,
+      "trophies_total": 36,
+      "progress": 10
+    },
+    {
       "title": "Red Matter",
-      "trophies_earned": 12,
+      "trophies_earned": 14,
       "trophies_total": 20,
-      "progress": 66
+      "progress": 78
     },
     {
       "title": "Bridge Constructor Portal trophies",
@@ -73,12 +79,6 @@
       "title": "The Last of Us™ Part II Remastered",
       "trophies_earned": 45,
       "trophies_total": 45,
-      "progress": 100
-    },
-    {
-      "title": "METAL GEAR SOLID - Master Collection Version",
-      "trophies_earned": 19,
-      "trophies_total": 19,
       "progress": 100
     }
   ]
