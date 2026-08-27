@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-26T07:05:59.777Z",
+  "updated": "2026-08-27T17:36:11.211Z",
   "username": "OSullivanJA",
-  "level": 302,
-  "level_progress": 96,
+  "level": 303,
+  "level_progress": 6,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2294,
+    "total": 2295,
     "platinum": 28,
-    "gold": 181,
+    "gold": 182,
     "silver": 443,
     "bronze": 1642
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "30",
-    "Completion": "56.34%"
+    "Completion": "56.36%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "For More Science!",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Hammertime",
       "game": "CROSSFIRE: Sierra Squad",
@@ -42,15 +48,15 @@
       "game": "CROSSFIRE: Sierra Squad",
       "trophyGrade": "bronze",
       "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Epsilon? No, no, no, no!!",
-      "game": "Red Matter",
-      "trophyGrade": "gold",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
+    {
+      "title": "Bridge Constructor Portal trophies",
+      "trophies_earned": 14,
+      "trophies_total": 17,
+      "progress": 81
+    },
     {
       "title": "CROSSFIRE: Sierra Squad",
       "trophies_earned": 7,
@@ -62,12 +68,6 @@
       "trophies_earned": 14,
       "trophies_total": 20,
       "progress": 78
-    },
-    {
-      "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 13,
-      "trophies_total": 17,
-      "progress": 72
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
