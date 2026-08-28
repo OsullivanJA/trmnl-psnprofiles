@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-27T17:36:11.211Z",
+  "updated": "2026-08-28T18:37:58.023Z",
   "username": "OSullivanJA",
   "level": 303,
-  "level_progress": 6,
+  "level_progress": 60,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2295,
-    "platinum": 28,
-    "gold": 182,
+    "total": 2298,
+    "platinum": 29,
+    "gold": 184,
     "silver": 443,
     "bronze": 1642
   },
   "stats": {
     "Games Played": "88",
-    "Completed Games": "30",
-    "Completion": "56.36%"
+    "Completed Games": "31",
+    "Completion": "56.43%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "The cake is a lie!",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Ultra Rare"
+    },
+    {
+      "trophyName": "0% Non-Delivery",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Ultra Rare"
+    },
+    {
+      "trophyName": "Spectacularly Lonely",
+      "game": "Bridge Constructor Portal trophies",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "For More Science!",
       "game": "Bridge Constructor Portal trophies",
@@ -30,32 +48,14 @@
       "game": "CROSSFIRE: Sierra Squad",
       "trophyGrade": "bronze",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Mini? More like puny",
-      "game": "CROSSFIRE: Sierra Squad",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "David vs Goliath",
-      "game": "CROSSFIRE: Sierra Squad",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Phew, I needed that.",
-      "game": "CROSSFIRE: Sierra Squad",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
     }
   ],
   "recent_games": [
     {
       "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 14,
+      "trophies_earned": 17,
       "trophies_total": 17,
-      "progress": 81
+      "progress": 100
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
