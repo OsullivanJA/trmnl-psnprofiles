@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-08-28T18:37:58.023Z",
+  "updated": "2026-08-29T12:38:55.113Z",
   "username": "OSullivanJA",
   "level": 303,
-  "level_progress": 60,
+  "level_progress": 66,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2298,
+    "total": 2300,
     "platinum": 29,
     "gold": 184,
-    "silver": 443,
+    "silver": 445,
     "bronze": 1642
   },
   "stats": {
     "Games Played": "88",
     "Completed Games": "31",
-    "Completion": "56.43%"
+    "Completion": "56.48%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "The Third King",
+      "game": "Red Matter",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "The Second King",
+      "game": "Red Matter",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "The cake is a lie!",
       "game": "Bridge Constructor Portal trophies",
@@ -36,21 +48,15 @@
       "game": "Bridge Constructor Portal trophies",
       "trophyGrade": "gold",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "For More Science!",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Hammertime",
-      "game": "CROSSFIRE: Sierra Squad",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
+    {
+      "title": "Red Matter",
+      "trophies_earned": 16,
+      "trophies_total": 20,
+      "progress": 84
+    },
     {
       "title": "Bridge Constructor Portal trophies",
       "trophies_earned": 17,
@@ -62,12 +68,6 @@
       "trophies_earned": 7,
       "trophies_total": 36,
       "progress": 10
-    },
-    {
-      "title": "Red Matter",
-      "trophies_earned": 14,
-      "trophies_total": 20,
-      "progress": 78
     },
     {
       "title": "Plants vs. Zombies™: Replanted",
