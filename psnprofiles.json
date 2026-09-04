@@ -1,61 +1,67 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-03T11:09:10.829Z",
+  "updated": "2026-09-04T11:20:28.008Z",
   "username": "OSullivanJA",
-  "level": 303,
-  "level_progress": 66,
+  "level": 304,
+  "level_progress": 16,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2300,
-    "platinum": 29,
-    "gold": 184,
-    "silver": 445,
+    "total": 2304,
+    "platinum": 30,
+    "gold": 185,
+    "silver": 447,
     "bronze": 1642
   },
   "stats": {
-    "Games Played": "88",
-    "Completed Games": "31",
-    "Completion": "56.48%"
+    "Games Played": "89",
+    "Completed Games": "32",
+    "Completion": "56.24%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Good job Agent!",
+      "game": "Red Matter",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Meet the Maker",
+      "game": "Red Matter",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Quantum Physics",
+      "game": "Red Matter",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Who are we?",
+      "game": "Red Matter",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "The Third King",
       "game": "Red Matter",
       "trophyGrade": "silver",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "The Second King",
-      "game": "Red Matter",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "The cake is a lie!",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "platinum",
-      "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "0% Non-Delivery",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Ultra Rare"
-    },
-    {
-      "trophyName": "Spectacularly Lonely",
-      "game": "Bridge Constructor Portal trophies",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
+      "title": "Red Matter 2",
+      "trophies_earned": 0,
+      "trophies_total": 25,
+      "progress": 0
+    },
+    {
       "title": "Red Matter",
-      "trophies_earned": 16,
+      "trophies_earned": 20,
       "trophies_total": 20,
-      "progress": 84
+      "progress": 100
     },
     {
       "title": "Bridge Constructor Portal trophies",
@@ -74,12 +80,6 @@
       "trophies_earned": 32,
       "trophies_total": 38,
       "progress": 83
-    },
-    {
-      "title": "The Last of Us™ Part II Remastered",
-      "trophies_earned": 45,
-      "trophies_total": 45,
-      "progress": 100
     }
   ]
 }
