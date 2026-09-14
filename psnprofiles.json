@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-13T11:46:27.626Z",
+  "updated": "2026-09-14T12:39:34.987Z",
   "username": "OSullivanJA",
   "level": 304,
-  "level_progress": 16,
+  "level_progress": 18,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2304,
+    "total": 2305,
     "platinum": 30,
     "gold": 185,
     "silver": 447,
-    "bronze": 1642
+    "bronze": 1643
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "32",
-    "Completion": "56.24%"
+    "Completion": "56.26%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Tools of the Trade",
+      "game": "NieR:Automata",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Good job Agent!",
       "game": "Red Matter",
@@ -42,15 +48,15 @@
       "game": "Red Matter",
       "trophyGrade": "silver",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "The Third King",
-      "game": "Red Matter",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "NieR:Automata",
+      "trophies_earned": 29,
+      "trophies_total": 48,
+      "progress": 58
+    },
     {
       "title": "Red Matter 2",
       "trophies_earned": 0,
@@ -74,12 +80,6 @@
       "trophies_earned": 7,
       "trophies_total": 36,
       "progress": 10
-    },
-    {
-      "title": "Plants vs. Zombies™: Replanted",
-      "trophies_earned": 32,
-      "trophies_total": 38,
-      "progress": 83
     }
   ]
 }
