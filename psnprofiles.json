@@ -1,67 +1,67 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-15T11:39:38.799Z",
+  "updated": "2026-09-16T11:26:48.661Z",
   "username": "OSullivanJA",
   "level": 304,
-  "level_progress": 18,
+  "level_progress": 26,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2305,
+    "total": 2309,
     "platinum": 30,
     "gold": 185,
-    "silver": 447,
-    "bronze": 1643
+    "silver": 448,
+    "bronze": 1646
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "32",
-    "Completion": "56.26%"
+    "Completion": "56.36%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Scanning the Stars",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Fly Me to the Moon",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "The Force Is Strong With This One",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "Harvest King",
+      "game": "NieR:Automata",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Tools of the Trade",
       "game": "NieR:Automata",
       "trophyGrade": "bronze",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Good job Agent!",
-      "game": "Red Matter",
-      "trophyGrade": "platinum",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Meet the Maker",
-      "game": "Red Matter",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Quantum Physics",
-      "game": "Red Matter",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Who are we?",
-      "game": "Red Matter",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
-      "title": "NieR:Automata",
-      "trophies_earned": 29,
-      "trophies_total": 48,
-      "progress": 58
+      "title": "Red Matter 2",
+      "trophies_earned": 3,
+      "trophies_total": 25,
+      "progress": 4
     },
     {
-      "title": "Red Matter 2",
-      "trophies_earned": 0,
-      "trophies_total": 25,
-      "progress": 0
+      "title": "NieR:Automata",
+      "trophies_earned": 30,
+      "trophies_total": 48,
+      "progress": 61
     },
     {
       "title": "Red Matter",
