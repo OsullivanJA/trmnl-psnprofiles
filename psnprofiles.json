@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-20T11:17:38.124Z",
+  "updated": "2026-09-21T12:42:31.823Z",
   "username": "OSullivanJA",
   "level": 304,
-  "level_progress": 26,
+  "level_progress": 28,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2309,
+    "total": 2310,
     "platinum": 30,
     "gold": 185,
     "silver": 448,
-    "bronze": 1646
+    "bronze": 1647
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "32",
-    "Completion": "56.36%"
+    "Completion": "56.38%"
   },
-  "token_expired": true,
+  "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Wait! Don't Kill Me!",
+      "game": "NieR:Automata",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Scanning the Stars",
       "game": "Red Matter 2",
@@ -42,26 +48,20 @@
       "game": "NieR:Automata",
       "trophyGrade": "silver",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Tools of the Trade",
-      "game": "NieR:Automata",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "NieR:Automata",
+      "trophies_earned": 31,
+      "trophies_total": 48,
+      "progress": 62
+    },
     {
       "title": "Red Matter 2",
       "trophies_earned": 3,
       "trophies_total": 25,
       "progress": 4
-    },
-    {
-      "title": "NieR:Automata",
-      "trophies_earned": 30,
-      "trophies_total": 48,
-      "progress": 61
     },
     {
       "title": "Red Matter",
