@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-22T11:32:56.077Z",
+  "updated": "2026-09-23T11:29:37.512Z",
   "username": "OSullivanJA",
   "level": 304,
-  "level_progress": 28,
+  "level_progress": 30,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2310,
+    "total": 2311,
     "platinum": 30,
     "gold": 185,
     "silver": 448,
-    "bronze": 1647
+    "bronze": 1648
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "32",
-    "Completion": "56.38%"
+    "Completion": "56.41%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "What Are You Doing?",
+      "game": "NieR:Automata",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Wait! Don't Kill Me!",
       "game": "NieR:Automata",
@@ -42,20 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "bronze",
       "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Harvest King",
-      "game": "NieR:Automata",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "NieR:Automata",
-      "trophies_earned": 31,
+      "trophies_earned": 32,
       "trophies_total": 48,
-      "progress": 62
+      "progress": 64
     },
     {
       "title": "Red Matter 2",
