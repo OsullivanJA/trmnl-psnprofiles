@@ -1,61 +1,61 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-25T11:46:18.398Z",
+  "updated": "2026-09-26T11:19:26.850Z",
   "username": "OSullivanJA",
-  "level": 304,
-  "level_progress": 30,
+  "level": 305,
+  "level_progress": 5,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2311,
-    "platinum": 30,
-    "gold": 185,
-    "silver": 448,
-    "bronze": 1648
+    "total": 2327,
+    "platinum": 31,
+    "gold": 186,
+    "silver": 453,
+    "bronze": 1657
   },
   "stats": {
     "Games Played": "89",
-    "Completed Games": "32",
-    "Completion": "56.41%"
+    "Completed Games": "33",
+    "Completion": "56.80%"
   },
   "token_expired": false,
   "recent_trophies": [
     {
-      "trophyName": "What Are You Doing?",
+      "trophyName": "Final Words",
+      "game": "NieR:Automata",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Machines vs. Machines",
+      "game": "NieR:Automata",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Inorganic Blade",
+      "game": "NieR:Automata",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Weapons Maniac",
+      "game": "NieR:Automata",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "The Power of Hate",
       "game": "NieR:Automata",
       "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Wait! Don't Kill Me!",
-      "game": "NieR:Automata",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Scanning the Stars",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "Fly Me to the Moon",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "The Force Is Strong With This One",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Common"
+      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "NieR:Automata",
-      "trophies_earned": 32,
+      "trophies_earned": 48,
       "trophies_total": 48,
-      "progress": 64
+      "progress": 100
     },
     {
       "title": "Red Matter 2",
