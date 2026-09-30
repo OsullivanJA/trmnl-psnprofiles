@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-09-29T12:47:25.724Z",
+  "updated": "2026-09-30T12:29:04.168Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 5,
+  "level_progress": 10,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2327,
+    "total": 2329,
     "platinum": 31,
     "gold": 186,
-    "silver": 453,
-    "bronze": 1657
+    "silver": 454,
+    "bronze": 1658
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "56.80%"
+    "Completion": "56.85%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "I'm in!",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Common"
+    },
+    {
+      "trophyName": "One Small Step for Man...",
+      "game": "Red Matter 2",
+      "trophyGrade": "silver",
+      "rarityLabel": "Common"
+    },
     {
       "trophyName": "Final Words",
       "game": "NieR:Automata",
@@ -36,32 +48,20 @@
       "game": "NieR:Automata",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Weapons Maniac",
-      "game": "NieR:Automata",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "The Power of Hate",
-      "game": "NieR:Automata",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "Red Matter 2",
+      "trophies_earned": 5,
+      "trophies_total": 25,
+      "progress": 9
+    },
     {
       "title": "NieR:Automata",
       "trophies_earned": 48,
       "trophies_total": 48,
       "progress": 100
-    },
-    {
-      "title": "Red Matter 2",
-      "trophies_earned": 3,
-      "trophies_total": 25,
-      "progress": 4
     },
     {
       "title": "Red Matter",
