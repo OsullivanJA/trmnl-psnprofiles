@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-01T13:06:31.685Z",
+  "updated": "2026-10-02T12:27:35.522Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 11,
+  "level_progress": 13,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2330,
+    "total": 2331,
     "platinum": 31,
     "gold": 186,
     "silver": 454,
-    "bronze": 1659
+    "bronze": 1660
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "56.87%"
+    "Completion": "56.90%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "The Light at the End of the Tunnel",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Belly of the Whale",
       "game": "Red Matter 2",
@@ -42,20 +48,14 @@
       "game": "NieR:Automata",
       "trophyGrade": "platinum",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Machines vs. Machines",
-      "game": "NieR:Automata",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Red Matter 2",
-      "trophies_earned": 6,
+      "trophies_earned": 7,
       "trophies_total": 25,
-      "progress": 10
+      "progress": 12
     },
     {
       "title": "NieR:Automata",
