@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-03T11:35:29.439Z",
+  "updated": "2026-10-04T12:16:43.346Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 23,
+  "level_progress": 25,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2332,
+    "total": 2333,
     "platinum": 31,
     "gold": 187,
     "silver": 454,
-    "bronze": 1660
+    "bronze": 1661
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "56.92%"
+    "Completion": "56.94%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Stealth in Space",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "The Blue Planet's Pale Companion",
       "game": "Red Matter 2",
@@ -42,20 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "bronze",
       "rarityLabel": "Common"
-    },
-    {
-      "trophyName": "One Small Step for Man...",
-      "game": "Red Matter 2",
-      "trophyGrade": "silver",
-      "rarityLabel": "Common"
     }
   ],
   "recent_games": [
     {
       "title": "Red Matter 2",
-      "trophies_earned": 8,
+      "trophies_earned": 9,
       "trophies_total": 25,
-      "progress": 21
+      "progress": 23
     },
     {
       "title": "NieR:Automata",
