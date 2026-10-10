@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-09T13:10:50.188Z",
+  "updated": "2026-10-10T12:25:41.585Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 56,
+  "level_progress": 68,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2339,
+    "total": 2341,
     "platinum": 31,
-    "gold": 189,
+    "gold": 190,
     "silver": 457,
-    "bronze": 1662
+    "bronze": 1663
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "57.09%"
+    "Completion": "57.14%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "False Fire",
+      "game": "Red Matter 2",
+      "trophyGrade": "gold",
+      "rarityLabel": "Uncommon"
+    },
+    {
+      "trophyName": "Forbidden Knowledge",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Drone Wars: A Newbie's Hope",
       "game": "Red Matter 2",
@@ -36,26 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "silver",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "The Weapon Within",
-      "game": "Red Matter 2",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "The First Contact",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Red Matter 2",
-      "trophies_earned": 15,
+      "trophies_earned": 17,
       "trophies_total": 25,
-      "progress": 53
+      "progress": 64
     },
     {
       "title": "NieR:Automata",
