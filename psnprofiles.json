@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-10T12:25:41.585Z",
+  "updated": "2026-10-11T12:43:20.197Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 68,
+  "level_progress": 70,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2341,
+    "total": 2342,
     "platinum": 31,
     "gold": 190,
     "silver": 457,
-    "bronze": 1663
+    "bronze": 1664
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "57.14%"
+    "Completion": "57.16%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "No-Drone Zone",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "False Fire",
       "game": "Red Matter 2",
@@ -42,20 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "gold",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Turret Terminator",
-      "game": "Red Matter 2",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Red Matter 2",
-      "trophies_earned": 17,
+      "trophies_earned": 18,
       "trophies_total": 25,
-      "progress": 64
+      "progress": 65
     },
     {
       "title": "NieR:Automata",
