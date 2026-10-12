@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-11T12:43:20.197Z",
+  "updated": "2026-10-12T15:15:12.231Z",
   "username": "OSullivanJA",
   "level": 305,
-  "level_progress": 70,
+  "level_progress": 83,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2342,
+    "total": 2345,
     "platinum": 31,
-    "gold": 190,
+    "gold": 191,
     "silver": 457,
-    "bronze": 1664
+    "bronze": 1666
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "33",
-    "Completion": "57.16%"
+    "Completion": "57.24%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Sacrificed for the Motherland",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Hubris in the Age of Knowledge",
+      "game": "Red Matter 2",
+      "trophyGrade": "bronze",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Drone Slayer",
+      "game": "Red Matter 2",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "No-Drone Zone",
       "game": "Red Matter 2",
@@ -30,32 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "gold",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Forbidden Knowledge",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Drone Wars: A Newbie's Hope",
-      "game": "Red Matter 2",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "End of the Line",
-      "game": "Red Matter 2",
-      "trophyGrade": "gold",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Red Matter 2",
-      "trophies_earned": 18,
+      "trophies_earned": 21,
       "trophies_total": 25,
-      "progress": 65
+      "progress": 78
     },
     {
       "title": "NieR:Automata",
