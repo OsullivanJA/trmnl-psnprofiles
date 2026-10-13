@@ -1,61 +1,67 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-12T15:15:12.231Z",
+  "updated": "2026-10-13T14:05:50.051Z",
   "username": "OSullivanJA",
-  "level": 305,
-  "level_progress": 83,
+  "level": 306,
+  "level_progress": 41,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2345,
-    "platinum": 31,
-    "gold": 191,
-    "silver": 457,
-    "bronze": 1666
+    "total": 2350,
+    "platinum": 32,
+    "gold": 193,
+    "silver": 458,
+    "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
-    "Completed Games": "33",
-    "Completion": "57.24%"
+    "Completed Games": "34",
+    "Completion": "57.36%"
   },
   "token_expired": false,
   "recent_trophies": [
     {
-      "trophyName": "Sacrificed for the Motherland",
-      "game": "Red Matter 2",
+      "trophyName": "BLACK HAWK DOWN!",
+      "game": "CROSSFIRE: Sierra Squad",
       "trophyGrade": "bronze",
       "rarityLabel": "Rare"
     },
     {
-      "trophyName": "Hubris in the Age of Knowledge",
+      "trophyName": "Glory to Volgravia!",
       "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
+      "trophyGrade": "platinum",
+      "rarityLabel": "Very Rare"
     },
     {
-      "trophyName": "Drone Slayer",
+      "trophyName": "Vertical Robot",
+      "game": "Red Matter 2",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Beyond the Stars",
       "game": "Red Matter 2",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
     },
     {
-      "trophyName": "No-Drone Zone",
-      "game": "Red Matter 2",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "False Fire",
+      "trophyName": "There is no up nor down, only forward.",
       "game": "Red Matter 2",
       "trophyGrade": "gold",
-      "rarityLabel": "Uncommon"
+      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
+      "title": "CROSSFIRE: Sierra Squad",
+      "trophies_earned": 8,
+      "trophies_total": 36,
+      "progress": 11
+    },
+    {
       "title": "Red Matter 2",
-      "trophies_earned": 21,
+      "trophies_earned": 25,
       "trophies_total": 25,
-      "progress": 78
+      "progress": 100
     },
     {
       "title": "NieR:Automata",
@@ -74,12 +80,6 @@
       "trophies_earned": 17,
       "trophies_total": 17,
       "progress": 100
-    },
-    {
-      "title": "CROSSFIRE: Sierra Squad",
-      "trophies_earned": 7,
-      "trophies_total": 36,
-      "progress": 10
     }
   ]
 }
