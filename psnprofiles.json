@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-17T10:36:47.007Z",
+  "updated": "2026-10-18T10:58:32.775Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 41,
+  "level_progress": 45,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2350,
+    "total": 2351,
     "platinum": 32,
     "gold": 193,
-    "silver": 458,
+    "silver": 459,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.36%"
+    "Completion": "57.38%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Settling in for the Long Haul",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "BLACK HAWK DOWN!",
       "game": "CROSSFIRE: Sierra Squad",
@@ -42,15 +48,15 @@
       "game": "Red Matter 2",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "There is no up nor down, only forward.",
-      "game": "Red Matter 2",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
+    {
+      "title": "Subnautica",
+      "trophies_earned": 2,
+      "trophies_total": 18,
+      "progress": 4
+    },
     {
       "title": "CROSSFIRE: Sierra Squad",
       "trophies_earned": 8,
@@ -73,12 +79,6 @@
       "title": "Red Matter",
       "trophies_earned": 20,
       "trophies_total": 20,
-      "progress": 100
-    },
-    {
-      "title": "Bridge Constructor Portal trophies",
-      "trophies_earned": 17,
-      "trophies_total": 17,
       "progress": 100
     }
   ]
