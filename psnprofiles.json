@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-22T11:45:16.864Z",
+  "updated": "2026-10-23T11:32:29.071Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 45,
+  "level_progress": 48,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2351,
+    "total": 2352,
     "platinum": 32,
     "gold": 193,
-    "silver": 459,
+    "silver": 460,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.38%"
+    "Completion": "57.41%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Personal Propulsion",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Settling in for the Long Haul",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Red Matter 2",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Beyond the Stars",
-      "game": "Red Matter 2",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 2,
+      "trophies_earned": 3,
       "trophies_total": 18,
-      "progress": 4
+      "progress": 7
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
