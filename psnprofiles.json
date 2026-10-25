@@ -1,24 +1,36 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-24T10:52:27.564Z",
+  "updated": "2026-10-25T11:19:06.316Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 48,
+  "level_progress": 61,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2352,
+    "total": 2354,
     "platinum": 32,
-    "gold": 193,
-    "silver": 460,
+    "gold": 194,
+    "silver": 461,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.41%"
+    "Completion": "57.46%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Follow the Degasi",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
+    {
+      "trophyName": "Ancient Technologies",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Personal Propulsion",
       "game": "Subnautica",
@@ -36,26 +48,14 @@
       "game": "CROSSFIRE: Sierra Squad",
       "trophyGrade": "bronze",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Glory to Volgravia!",
-      "game": "Red Matter 2",
-      "trophyGrade": "platinum",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Vertical Robot",
-      "game": "Red Matter 2",
-      "trophyGrade": "silver",
-      "rarityLabel": "Very Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 3,
+      "trophies_earned": 5,
       "trophies_total": 18,
-      "progress": 7
+      "progress": 18
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
