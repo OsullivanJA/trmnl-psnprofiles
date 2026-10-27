@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-26T12:53:21.243Z",
+  "updated": "2026-10-27T12:04:26.079Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 61,
+  "level_progress": 65,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2354,
+    "total": 2355,
     "platinum": 32,
     "gold": 194,
-    "silver": 461,
+    "silver": 462,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.46%"
+    "Completion": "57.48%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Seaside Living with an Ocean View",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Uncommon"
+    },
     {
       "trophyName": "Follow the Degasi",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "silver",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "BLACK HAWK DOWN!",
-      "game": "CROSSFIRE: Sierra Squad",
-      "trophyGrade": "bronze",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 5,
+      "trophies_earned": 6,
       "trophies_total": 18,
-      "progress": 18
+      "progress": 21
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
