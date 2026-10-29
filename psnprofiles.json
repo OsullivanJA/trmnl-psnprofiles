@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-10-28T12:44:56.320Z",
+  "updated": "2026-10-29T12:54:17.203Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 65,
+  "level_progress": 75,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2355,
+    "total": 2356,
     "platinum": 32,
-    "gold": 194,
+    "gold": 195,
     "silver": 462,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.48%"
+    "Completion": "57.51%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Extinction Event Avoided",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Seaside Living with an Ocean View",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "silver",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Settling in for the Long Haul",
-      "game": "Subnautica",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 6,
+      "trophies_earned": 7,
       "trophies_total": 18,
-      "progress": 21
+      "progress": 30
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
