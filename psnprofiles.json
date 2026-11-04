@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-03T14:04:26.312Z",
+  "updated": "2026-11-04T14:25:34.672Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 78,
+  "level_progress": 81,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2357,
+    "total": 2358,
     "platinum": 32,
     "gold": 195,
-    "silver": 463,
+    "silver": 464,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.53%"
+    "Completion": "57.55%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "40-foot Sub For One",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Ordered the Prawn",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Ancient Technologies",
-      "game": "Subnautica",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 8,
+      "trophies_earned": 9,
       "trophies_total": 18,
-      "progress": 33
+      "progress": 36
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
