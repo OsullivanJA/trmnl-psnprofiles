@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-04T14:25:34.672Z",
+  "updated": "2026-11-05T14:33:28.005Z",
   "username": "OSullivanJA",
   "level": 306,
-  "level_progress": 81,
+  "level_progress": 91,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2358,
+    "total": 2359,
     "platinum": 32,
-    "gold": 195,
+    "gold": 196,
     "silver": 464,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.55%"
+    "Completion": "57.58%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Seamonsters",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "40-foot Sub For One",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "silver",
       "rarityLabel": "Uncommon"
-    },
-    {
-      "trophyName": "Follow the Degasi",
-      "game": "Subnautica",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 9,
+      "trophies_earned": 10,
       "trophies_total": 18,
-      "progress": 36
+      "progress": 44
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
