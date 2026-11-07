@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-06T14:10:36.979Z",
+  "updated": "2026-11-07T12:54:11.573Z",
   "username": "OSullivanJA",
-  "level": 306,
-  "level_progress": 91,
+  "level": 307,
+  "level_progress": 1,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2359,
+    "total": 2360,
     "platinum": 32,
-    "gold": 196,
+    "gold": 197,
     "silver": 464,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.58%"
+    "Completion": "57.60%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Find the Lost River",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Rare"
+    },
     {
       "trophyName": "Seamonsters",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Seaside Living with an Ocean View",
-      "game": "Subnautica",
-      "trophyGrade": "silver",
-      "rarityLabel": "Uncommon"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 10,
+      "trophies_earned": 11,
       "trophies_total": 18,
-      "progress": 44
+      "progress": 53
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
