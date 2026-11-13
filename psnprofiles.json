@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-12T15:05:07.650Z",
+  "updated": "2026-11-13T14:29:27.616Z",
   "username": "OSullivanJA",
   "level": 307,
-  "level_progress": 11,
+  "level_progress": 21,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2361,
+    "total": 2362,
     "platinum": 32,
-    "gold": 198,
+    "gold": 199,
     "silver": 464,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.63%"
+    "Completion": "57.65%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Fourteen Thousand Leagues Under the Sea",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Thermal Activity",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "silver",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Ordered the Prawn",
-      "game": "Subnautica",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 12,
+      "trophies_earned": 13,
       "trophies_total": 18,
-      "progress": 62
+      "progress": 71
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
