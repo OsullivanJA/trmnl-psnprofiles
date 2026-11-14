@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-13T14:29:27.616Z",
+  "updated": "2026-11-14T13:26:25.547Z",
   "username": "OSullivanJA",
   "level": 307,
-  "level_progress": 21,
+  "level_progress": 25,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2362,
+    "total": 2363,
     "platinum": 32,
     "gold": 199,
-    "silver": 464,
+    "silver": 465,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.65%"
+    "Completion": "57.68%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "\"Man's Best Friend\"",
+      "game": "Subnautica",
+      "trophyGrade": "silver",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Fourteen Thousand Leagues Under the Sea",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "40-foot Sub For One",
-      "game": "Subnautica",
-      "trophyGrade": "silver",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 13,
+      "trophies_earned": 14,
       "trophies_total": 18,
-      "progress": 71
+      "progress": 73
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
