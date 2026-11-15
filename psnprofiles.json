@@ -1,24 +1,30 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-14T13:26:25.547Z",
+  "updated": "2026-11-15T13:52:13.671Z",
   "username": "OSullivanJA",
   "level": 307,
-  "level_progress": 25,
+  "level_progress": 35,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2363,
+    "total": 2364,
     "platinum": 32,
-    "gold": 199,
+    "gold": 200,
     "silver": 465,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
     "Completed Games": "34",
-    "Completion": "57.68%"
+    "Completion": "57.70%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Optimal Health",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "\"Man's Best Friend\"",
       "game": "Subnautica",
@@ -42,20 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "gold",
       "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Seamonsters",
-      "game": "Subnautica",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 14,
+      "trophies_earned": 15,
       "trophies_total": 18,
-      "progress": 73
+      "progress": 82
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
