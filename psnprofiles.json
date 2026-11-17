@@ -1,24 +1,42 @@
 {
   "source": "https://psnprofiles.com/OSullivanJA",
-  "updated": "2026-11-16T15:36:18.816Z",
+  "updated": "2026-11-17T15:54:58.631Z",
   "username": "OSullivanJA",
   "level": 307,
-  "level_progress": 35,
+  "level_progress": 88,
   "profile_image": "https://i.psnprofiles.com/avatars/m/Gb1a0c14a2.png",
   "trophies": {
-    "total": 2364,
-    "platinum": 32,
-    "gold": 200,
+    "total": 2367,
+    "platinum": 33,
+    "gold": 202,
     "silver": 465,
     "bronze": 1667
   },
   "stats": {
     "Games Played": "89",
-    "Completed Games": "34",
-    "Completion": "57.70%"
+    "Completed Games": "35",
+    "Completion": "57.77%"
   },
   "token_expired": false,
   "recent_trophies": [
+    {
+      "trophyName": "Platinum Trophy",
+      "game": "Subnautica",
+      "trophyGrade": "platinum",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Leave Only Time Capsules",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
+    {
+      "trophyName": "Go Among the Stars",
+      "game": "Subnautica",
+      "trophyGrade": "gold",
+      "rarityLabel": "Very Rare"
+    },
     {
       "trophyName": "Optimal Health",
       "game": "Subnautica",
@@ -30,32 +48,14 @@
       "game": "Subnautica",
       "trophyGrade": "silver",
       "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Fourteen Thousand Leagues Under the Sea",
-      "game": "Subnautica",
-      "trophyGrade": "gold",
-      "rarityLabel": "Very Rare"
-    },
-    {
-      "trophyName": "Thermal Activity",
-      "game": "Subnautica",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
-    },
-    {
-      "trophyName": "Find the Lost River",
-      "game": "Subnautica",
-      "trophyGrade": "gold",
-      "rarityLabel": "Rare"
     }
   ],
   "recent_games": [
     {
       "title": "Subnautica",
-      "trophies_earned": 15,
+      "trophies_earned": 18,
       "trophies_total": 18,
-      "progress": 82
+      "progress": 100
     },
     {
       "title": "CROSSFIRE: Sierra Squad",
